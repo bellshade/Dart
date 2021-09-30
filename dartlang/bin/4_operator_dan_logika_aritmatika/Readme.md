@@ -62,7 +62,6 @@ int b = 3;
 int hasil = a ~/ b;
 print(hasil); // 1
 ```
-
 > Ingat, operator ini bukan pembulatan melainkan hanya menghilangkan koma.
 
 ### 6. Modulo
