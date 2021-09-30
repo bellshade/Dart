@@ -1,12 +1,12 @@
 # Kondisi
 
-Pada materi kondisi di Pemograman Dart kita akan mempelajari _Operator Perbandingan_, _Operator Logika_ dan _Ekspresi Bersyarat_
+Pada materi kali ini di Pemrograman Dart kita akan mempelajari _Operator Perbandingan_, _Operator Logika_ dan _Ekspresi Bersyarat_.
 
 ## Operator Perbandingan (Equality and Relational Operator)
 
 ### 1. Operator Setara (==)
 
-Operator untuk membandingkan suatu Object apakah setara atau tidak
+Operator untuk membandingkan suatu Object apakah setara atau tidak.
 
 ```dart
 int a = 5;
@@ -18,7 +18,7 @@ print(a == word); // false
 
 ### 2. Operator Tidak Setara (!=)
 
-Operator untuk membandingkan suatu Object apakah tidak setara atau setara
+Operator untuk membandingkan suatu Object apakah tidak setara atau setara.
 
 ```dart
 int a = 5;
@@ -87,7 +87,7 @@ print(!kondisi); // false
 
 ### 2. Operator OR (||)
 
-Operator yang membandingkan ke 2 kondisi, jika salah satu bernilai `true` maka hasilnya `true`
+Operator yang membandingkan ke 2 kondisi, jika salah satu bernilai `true` maka hasilnya `true`.
 
 ```dart
 print(true || true); // true
@@ -97,7 +97,7 @@ print(false || false); // false
 
 ### 3. Operator AND (&&)
 
-Operator yang membandingkan ke 2 kondisi, jika keduanya bernilai `true` maka hasilnya `true`
+Operator yang membandingkan ke 2 kondisi, jika keduanya bernilai `true` maka hasilnya `true`.
 
 ```dart
 print(true || true); // true
