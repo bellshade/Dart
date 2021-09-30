@@ -1,6 +1,6 @@
 # Perulangan
 
-Penulisan serta konsep perulangan dari pemrograman Dart sama seperti bahasa pemgrogram yang lain.
+Penulisan serta konsep perulangan dari pemrograman Dart sama seperti bahasa pemrograman yang lain.
 
 ## Perulangan For (For loop)
 
@@ -13,7 +13,7 @@ for (A; B; C) {}
 ```
 
 A. Nilai awal.<br>
-B. Kondisi yang memenuhi Perulangan.<br>
+B. Kondisi yang memenuhi perulangan.<br>
 C. Step atau berapa lompatan dari perulangan.<br>
 
 Berikut contoh perulangan for.
@@ -87,14 +87,14 @@ for (String huruf in vokal) {
 // a i u e o
 ```
 
-Bisa diliat dari kode diatas untuk `for in` hanya meng-iterasikan element yang ada pada List `vokal`.
-Element yang sedang di-iterasi akan disimpan ke variable `huruf` yang tipe datanya harus sama dengan element di dalam List `vokal` dan perulangan otomatis berhenti jika semua element sudah di-iterasi.
+Bisa diliat dari kode diatas untuk `for in` hanya meng-iterasikan elemen yang ada pada List `vokal`.
+Elemen yang sedang di-iterasi akan disimpan ke variable `huruf` yang tipe datanya harus sama dengan elemen di dalam List `vokal` dan perulangan otomatis berhenti jika semua elemen sudah di-iterasi.
 
 ## Perulangan While (While and do-while)
 
 ### 1. While
 
-Perulangan while sangat cocok untuk kondisi yang mana `kondisi saat selesai`-nya tidak diketahui.
+Perulangan `while` sangat cocok untuk kondisi yang mana `kondisi saat selesai`-nya tidak diketahui.
 
 Contohnya, saat membaca file atau koneksi antar socket.
 Pada kedua kondisi tersebut kita tidak tau kondisi pasti kapan harus selesai.
@@ -195,9 +195,9 @@ Hasil dari eksekusi kode diatas.
 
 Bisa dilihat yang tampil hanyalah bilangan ganjil.
 Setiap hasil modulo sama dengan 0 yang artinya pada iterasi bilangan genap `continue` akan tereksekusi.<br>
-Setiap continue tereksekusi kode _setelah_ `continue` akan terskip.
+Setiap continue tereksekusi kode **setelah** `continue` akan terskip.
 
-Bagaimana jika print dipindah ke _sebelum_ `continue`.
+Bagaimana jika print dipindah ke **sebelum** `continue`.
 
 ```dart
 for (int i = 0; i < 10; i++) {
@@ -224,4 +224,4 @@ Hasilnya seperti berikut.
 ```
 
 Semua bilangan yang di iterasi tampil ke layar.
-Karena sifat `continue` hanya nge-skip baris kode _setelah_ dirinya.
+Karena sifat `continue` hanya nge-skip baris kode **setelah** dirinya.
