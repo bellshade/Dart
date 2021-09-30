@@ -109,18 +109,18 @@ print(false || false); // false
 
 ### 1. Ternary Operator
 
-Ternary operator berfungsi membandingkan nilai suatu variable ke kondisi tertentu, jika kondisi terpenuhi maka akan mengembalikan nilai, begitu sebaliknya jika kondisi tidak terpenuhi.
+Ternary operator berfungsi membandingkan suatu variable ke kondisi tertentu, jika kondisi terpenuhi maka akan mengembalikan nilai, begitupun sebaliknya jika kondisi tidak terpenuhi.
 
 ```dart
 int angka = 5;
-// jika angka 5 habis dibagi 2 maka bilangan tersebut Genap
+// jika angka 5 tidak habis dibagi 2 maka bilangan tersebut Ganjil
 String bilangan = (angka % 2) == 0 ? 'Genap' : 'Ganjil';
 print(bilangan); // Ganjil
 ```
 
 ### 2. Null Safety Operator
 
-Pada pemograman Dart sangat waspada dengan nilai `null` maka dari itu jika ada nilai yang `null` kita harus menggantinya dengan nilai `default`. Tentu saja kita tidak ingin menampilkan kata `null` ke pada user.
+Pada pemrograman Dart sangat waspada dengan nilai `null` maka dari itu jika ada nilai yang `null` kita harus menggantinya dengan nilai pengganti yang lebih manusiawi. Tentu saja kita tidak ingin menampilkan kata `null` ke pada user.
 
 ```dart
 // tanda ? pada tipe data menandakan bahwa variable tersebut bisa menyimpan nilai null
@@ -130,7 +130,7 @@ print(kata ?? 'Tidak boleh null');
 
 ### 3. If Else
 
-If Else pada pemograman Dart hampir sama seperti bahasa pemograman yang lain.
+If Else pada pemrograman Dart hampir sama seperti bahasa pemrograman yang lain.
 
 ```dart
 int nilai = 6;
