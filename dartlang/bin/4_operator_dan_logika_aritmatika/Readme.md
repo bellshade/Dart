@@ -1,41 +1,41 @@
 # Operator
 
-Pada pemograman pastinya butuh Operator untuk mengkalkulasi suatu angka atau pun melakukan perbandingan.
+Pada pemrograman pastinya butuh Operator untuk mengkalkulasi suatu angka atau pun melakukan perbandingan.
 Dart sendiri banyak mendukung Operator untuk melakukan hal tersebut.
 
 ## Operator Aritmatika (Arithmetic Operator)
 
 ### 1. Tambah (+)
 
-Operator tambah `+` untuk menjumlah 2 bilangan
+Operator tambah `+` untuk menjumlah 2 bilangan.
 
 ```dart
 int a = 5;
 int b = 5;
 int hasil = a + b;
-print(hasil) // 10
+print(hasil); // 10
 ```
 
 ### 2. Kurang (-)
 
-Operator kurang `-` untuk mengurang 2 bilangan
+Operator kurang `-` untuk mengurang 2 bilangan.
 
 ```dart
 int a = 10;
 int b = 7;
 int hasil = a - b;
-print(hasil) // 3
+print(hasil); // 3
 ```
 
 ### 3. Kali (\*)
 
-Operator kali `*` untuk mengkali 2 bilangan
+Operator kali `*` untuk mengkali 2 bilangan.
 
 ```dart
 int a = 3;
 int b = 4;
 int hasil = a * b;
-print(hasil) // 12
+print(hasil); // 12
 ```
 
 ### 4. Bagi (/)
@@ -47,7 +47,7 @@ Untuk tipe data yang dihasilkan pada pembagian adalah `double` walaupun 2 bilang
 int a = 5;
 int b = 3;
 double hasil = a / b;
-print(hasil) // 1.67
+print(hasil); // 1.67
 ```
 
 ### 5. Bagi, tapi integer (~/)
@@ -55,14 +55,15 @@ print(hasil) // 1.67
 Operator untuk pembagian kali ini agak berbeda dari sebelumnya.
 Sama-sama membagi dari 2 bilangan tapi tipe data yang dihasilkan bukan `double` melainkan `int`.
 Operator ini sangat berguna jika ingin mendapatkan nilai tanpa koma. <br>
-`Ingat, Operator ini bukan pembulatan melainkan hanya menghilangkan koma saja.`
 
 ```dart
 int a = 5;
 int b = 3;
 int hasil = a ~/ b;
-print(hasil) // 1
+print(hasil); // 1
 ```
+
+> Ingat, operator ini bukan pembulatan melainkan hanya menghilangkan koma.
 
 ### 6. Modulo
 
@@ -81,7 +82,7 @@ Angka 1 tidak bisa dikurang dengan 3 maka hasil dari modulo adalah `1` dan hasil
 int a = 7;
 int b = 3;
 int hasil = a % b;
-print(hasil) // 1
+print(hasil); // 1
 ```
 
 ## Increment dan Decrement
@@ -93,8 +94,8 @@ Untuk prefix increment. Angka di variable `a` di-increment-kan **sebelum** varia
 ```dart
 int a = 0;
 int b = ++a;
-print(a) // 1;
-print(b) // 1;
+print(a); // 1
+print(b); // 1
 ```
 
 ### 2. Postfix Increment
@@ -104,8 +105,8 @@ Untuk postfix increment. Angka di variable `a` di-increment-kan **setelah** nila
 ```dart
 int a = 0;
 int b = a++;
-print(a) // 1;
-print(b) // 0;
+print(a); // 1
+print(b); // 0
 ```
 
 ### 3. Prefix Decrement
@@ -115,8 +116,8 @@ Untuk prefix decrement. Angka di variable `a` di-decrement-kan **sebelum** varia
 ```dart
 int a = 0;
 int b = --a;
-print(a) // -1;
-print(b) // -1;
+print(a); // -1
+print(b); // -1
 ```
 
 ### 4. Postfix Decrement
@@ -126,8 +127,8 @@ Untuk postfix decrement. Angka di variable `a` di-decrement-kan **setelah** nila
 ```dart
 int a = 0;
 int b = a--;
-print(a) // -1;
-print(b) // 0;
+print(a); // -1
+print(b); // 0
 ```
 
 ## Operator Penugasan (Assignment Operator)
@@ -137,14 +138,14 @@ Yang membedakan adalah jumlah variable yang di kalkulasi adalah variable itu sen
 
 ```dart
 int a = 5;
-a += 10; // sama sepert a = a + 10;
-print(a) // 15;
+a += 10; // sama seperti a = a + 10;
+print(a); // 15
 
 int a = 7;
-a ~/= 3; // sama sepert a = a ~/ 3;
-print(a) // 2;
+a ~/= 3; // sama seperti a = a ~/ 3;
+print(a); // 2
 
 int a = 7;
-a %= 3; // sama sepert a = a % 3;
-print(a) // 1;
+a %= 3; // sama seperti a = a % 3;
+print(a); // 1
 ```
