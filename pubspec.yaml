@@ -1,0 +1,13 @@
+name: the_algorithms_dart
+
+repository: https://github.com/bellshade/Dart
+
+dependencies:
+  test: ^1.15.4
+  coverage: ^0.14.1
+
+dev_dependencies:
+  stack: ^0.0.1
+
+environment:
+  sdk: ">=2.10.0 <3.0.0"
