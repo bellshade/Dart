@@ -55,7 +55,7 @@ main(List<String> args) {
   print('Ekespresi Bersyarat');
   print('1. Ternary Operator');
   int angka = 5;
-  // jika angka 5 habis dibagi 2 maka bilangan tersebut Genap
+  // jika angka 5 tidak habis dibagi 2 maka bilangan tersebut Ganjil
   String bilangan = (angka % 2) == 0 ? 'Genap' : 'Ganjil';
   print(bilangan);
 
