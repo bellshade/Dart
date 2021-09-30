@@ -17,9 +17,22 @@ Semua orang boleh ikut berkontribusi walaupun hal kecil, dengan ketentuan sebaga
 **1. Basic Learning**
 
 Basic learning adalah kumpulan implementasi kode materi mendasar dan fundamental untuk pemrograman Dart. Dikemas dengan keterangan kode yang mudah di mengerti sehingga bisa dijadikan referensi untuk kalian yang belajar pemrograman Dart.
-> Semua implementasi kode untuk Basic Learning bisa ditemukan di **`/dartlang/basics`** 
 
-**2. Algoritma**
+> Semua implementasi kode untuk Basic Learning bisa ditemukan di **`/dartlang/bin/basic`** 
+
+**2. Lanjutan**
+
+Kumpulan implementasi kode lanjutan dan fitur unik yang ada pada bahasa pemrograman Dart. Jika belum menuntaskan materi basic, kami sarankan untuk mempelajari materi basic terlebih dahulu. 
+
+> Semua implementasi kode untuk Basic Learning bisa ditemukan di **`/dartlang/bin/lanjutan`** 
+
+**3. Struktur Data**
+
+Struktur data adalah cara penyimpanan, penyusunan, dan pengaturan data yang kompleks yang dibuat agar program dapat menggunakan data tersebut dengan efisien.
+
+> Semua implementasi kode untuk Basic Learning bisa ditemukan di **`/dartlang/bin/lanjutan`** 
+
+**4. Algoritma**
 
 Algoritma adalah langkah-langkah untuk menyelesaikan suatu pekerjaan dimana terdiri dari 3 bagian utama, yaitu:
 
@@ -36,7 +49,7 @@ Algoritma harus memiliki:
 - memiliki dokumentasi penjelasan yang jelas dan/atau URL ke materi sumber
 - gunakan hasil kembalian / _return_ daripada langsung mencetak ke layar
 
-> Semua implementasi kode untuk Algorithm bisa ditemukan di **`/dartlang/algorithms`** 
+> Semua implementasi kode untuk Algorithm bisa ditemukan di **`/dartlang/bin/algorithms`** 
 
 ## Standar Penulisan
 
@@ -55,8 +68,8 @@ Untuk dokumentasi mengenai standar penulisan bisa dilihat di link berikut :
 **Pull request yang baik**
 
 - lakukan fork pada repository ini
-- setelah melakukan fork anda dibebaskan untuk mengubah atau menambah algoritma
-  - untuk pull request "mengubah" diusahakan anda menerapkan algoritma yang lebih baik dan lebih mudah
+- setelah melakukan fork anda dibebaskan untuk mengubah atau menambah kode
+  - untuk pull request "mengubah" diusahakan anda menerapkan kode yang lebih baik, mudah dan efisien dari segi performa, ukuran kode, dan sebagainya.
 - setelah mengubah, menambah, atau perbaikan dokumentasi, usahakan anda membuat branch baru
 
 ```bash
@@ -65,16 +78,16 @@ git add .
 git commit -m "add: menambahkan algoritma baru"
 ```
 
-- lakukan push ke branch anda dan kemudian open pull request
+- lakukan push ke branch anda dan kemudian silahkan open pull request
 
 **saran pesan commit**
 
-- `add` untuk menambah algoritma atau tambahan lainnya
-- `fix` untuk mengubah algoritma yang sudah ada atau memperbaiki
+- `add` untuk menambah kode atau tambahan lainnya
+- `fix` untuk mengubah kode yang sudah ada atau memperbaiki
 - `docs` untuk mengubah atau membuat dokumentasi
 - `style` untuk mengubah atau memperbaiki style kode untuk contohnya bisa dilihat pada commit yang diatas
 
-pull request `merged` jika:
+pull request akan `merged` jika:
 
 - mengikuti standar dan arahan dari `CONTRIBUTING.md`
 - lulus test dan cek dari beberapa test yang sudah kami siapkan
