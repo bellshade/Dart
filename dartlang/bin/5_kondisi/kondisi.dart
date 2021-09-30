@@ -76,4 +76,20 @@ main(List<String> args) {
     // jika nilai lebih dari 8
     print('Sempurna');
   }
+
+  print('4. Switch Case');
+  String waktu = 'Malam';
+  switch (waktu) {
+    case 'Pagi':
+      print('Selamat Pagi');
+      break;
+    case 'Siang':
+      print('Selamat Siang');
+      break;
+    case 'Malam':
+      print('Selamat Malam');
+      break;
+    default:
+      print('Hai untuk mu');
+  }
 }

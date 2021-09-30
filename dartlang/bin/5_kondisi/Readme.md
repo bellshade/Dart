@@ -142,3 +142,24 @@ if (nilai < 6) { // jika nilai kurang dari 6
   print('Sempurna');
 }
 ```
+
+### 4. Switch Case
+
+Begitu juga dengan Switch Case tidak jauh berbeda.
+
+```dart
+String waktu = 'Malam';
+switch (waktu) {
+case 'Pagi':
+  print('Selamat Pagi');
+  break;
+case 'Siang':
+  print('Selamat Siang');
+  break;
+case 'Malam':
+  print('Selamat Malam');
+  break;
+default:
+  print('Hai untuk mu');
+}
+```
