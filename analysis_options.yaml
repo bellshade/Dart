@@ -10,6 +10,26 @@ include: package:lints/recommended.yaml
 linter:
   rules:
     - camel_case_types
+analyzer:
+  errors:
+    camel_case_types: error
+    unrelated_type_equality_checks: error
+    avoid_empty_else: error
+    empty_catches: error
+    avoid_types_as_parameter_names: error
+    always_declare_return_types: error
+    empty_constructor_bodies: error
+    library_names: error
+    library_prefixes: error
+    prefer_single_quotes: error
+    unnecessary_brace_in_string_interps: error
+    unnecessary_const: error
+    unnecessary_new: error
+    unnecessary_null_in_if_null_operators: error
+    unnecessary_string_escapes: error
+    unnecessary_string_interpolations: error
+    avoid_unused_constructor_parameters: error
+    prefer_final_in_for_each: error
 
 # analyzer:
 #   exclude:

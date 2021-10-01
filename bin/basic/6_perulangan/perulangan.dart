@@ -33,9 +33,10 @@ main(List<String> args) {
   }
 
   print('\n2. Do-while');
-  bool kondisiWhile = false;
-  while (kondisiWhile) {
-    print('Masuk while');
+  int pos = 0;
+  while (pos < 5) {
+    pos++;
+    print('Masuk while. Perulangan ke-$pos');
   }
 
   bool kondisiDoWhile = false;

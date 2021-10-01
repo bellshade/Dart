@@ -18,19 +18,19 @@ Semua orang boleh ikut berkontribusi walaupun hal kecil, dengan ketentuan sebaga
 
 Basic learning adalah kumpulan implementasi kode materi mendasar dan fundamental untuk pemrograman Dart. Dikemas dengan keterangan kode yang mudah di mengerti sehingga bisa dijadikan referensi untuk kalian yang belajar pemrograman Dart.
 
-> Semua implementasi kode untuk Basic Learning bisa ditemukan di **`/dartlang/bin/basic`** 
+> Semua implementasi kode untuk Basic Learning bisa ditemukan di **`/bin/basic`** 
 
 **2. Lanjutan**
 
 Kumpulan implementasi kode lanjutan dan fitur unik yang ada pada bahasa pemrograman Dart. Jika belum menuntaskan materi basic, kami sarankan untuk mempelajari materi basic terlebih dahulu. 
 
-> Semua implementasi kode untuk Basic Learning bisa ditemukan di **`/dartlang/bin/lanjutan`** 
+> Semua implementasi kode untuk Basic Learning bisa ditemukan di **`/bin/lanjutan`** 
 
 **3. Struktur Data**
 
 Struktur data adalah cara penyimpanan, penyusunan, dan pengaturan data yang kompleks yang dibuat agar program dapat menggunakan data tersebut dengan efisien.
 
-> Semua implementasi kode untuk Basic Learning bisa ditemukan di **`/dartlang/bin/lanjutan`** 
+> Semua implementasi kode untuk Basic Learning bisa ditemukan di **`/bin/lanjutan`** 
 
 **4. Algoritma**
 
@@ -49,7 +49,7 @@ Algoritma harus memiliki:
 - memiliki dokumentasi penjelasan yang jelas dan/atau URL ke materi sumber
 - gunakan hasil kembalian / _return_ daripada langsung mencetak ke layar
 
-> Semua implementasi kode untuk Algorithm bisa ditemukan di **`/dartlang/bin/algorithms`** 
+> Semua implementasi kode untuk Algorithm bisa ditemukan di **`/bin/algorithms`** 
 
 ## Standar Penulisan
 

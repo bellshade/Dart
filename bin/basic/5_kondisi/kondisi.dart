@@ -3,13 +3,14 @@ main(List<String> args) {
   print('1. Operator Setara');
   int a = 5;
   int b = 5;
-  String word = 'kata';
+  String word1 = 'kata';
+  String word2 = 'kata ';
   print(a == b);
-  print(a == word);
+  print(word1 == word2);
 
   print('2. Operator Tidak Setara');
   print(a != b);
-  print(a != word);
+  print(word1 != word2);
 
   print('3. Operator Lebih Dari');
   a = 5;
@@ -42,14 +43,14 @@ main(List<String> args) {
   print(!kondisi);
 
   print('2. Operator OR');
-  print(true || true);
-  print(true || false);
+  print(1 == 1 || 'kata' == 'kata');
+  print(5 == 5 || 3.0 == 3.14);
   print(false || false);
 
   print('3. Operator AND');
   print(true && true);
   print(true && false);
-  print(false && false);
+  print('kata' == 'kalimat' && false);
 
   print('\n----------------------');
   print('Ekespresi Bersyarat');

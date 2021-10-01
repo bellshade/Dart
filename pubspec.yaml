@@ -11,6 +11,5 @@ dependencies:
 dev_dependencies:
   analyzer: ^2.3.0
   lints: ^1.0.1
-  pedantic: ^1.10.0
   stack: ^0.2.1
   test: ^1.16.5
