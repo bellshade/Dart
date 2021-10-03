@@ -15,3 +15,5 @@ Materi-materi basic yang tersedia di Dart ini antara lain:
    Penggunaan kondisi percabangan untuk melakukan perhitungan atau tindakan yang berbeda tergantung pada kondisinya(benar atau salah).
 6. [Perulangan](https://github.com/bellshade/Dart/tree/main/bin/basic/5_perulangan)
    Penggunaan perulangan untuk mengeksekusi beberapa instruksi kode hingga kondisi tertentu terpenuhi.
+7. [Input dan Output](https://github.com/bellshade/Dart/tree/main/bin/basic/7_input)
+   Penggunaan `dart:io` untuk kebutuhan value inputan dari user dan melakukan output.

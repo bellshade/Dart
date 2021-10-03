@@ -1,16 +1,16 @@
-# Contributing
+# Kontribusi
 
-**Contributor**
+**Kontributor**
 
-Kami sangat senang anda telah ikut berkontribusi dalam implementasi algoritma, struktur data atau memperbaiki error serta merilis implementasi materi basic learning Dart.
+Kami sangat senang anda telah ikut berkontribusi dalam implementasi algoritma, struktur data atau memperbaiki error serta merilis implementasi materi belajar bahasa pemrograman Dart.
 
-Semua orang boleh ikut berkontribusi walaupun hal kecil, dengan ketentuan sebagai berikut:
+Semua orang boleh ikut berkontribusi pada repository ini, dengan ketentuan sebagai berikut:
 
-- Hasil pekerjaan anda adalah buatan anda sendiri dan tidak ada hak cipta dari orang lain, jika kami menemukan kesamaan maka kami tidak `merged`.
+- Hasil pekerjaan anda adalah buatan anda sendiri dan tidak ada hak cipta dari orang lain, jika kami menemukan kesamaan maka tidak kami `merge`.
 - Hasil kerja anda akan berlisensi [MIT](LICENSE) ketika permintaan pull anda sudah di merged
 - Hasil kerja anda wajib mengikuti standar dan style koding dari kami (lihat bagian [Standar penulisan](#standar-penulisan))
-- Untuk Flutter, hanya gunakan package dari [pub.dev](https://pub.dev) jika memang membutuhkan. Sebelumnya silahkan diskusi di [issue](https://github.com/bellshade/Dart/issues)
-- Untuk Dartlang, hindari penggunaan library/package pada koding (jika dibutuhkan, silahkan diskusi di [issue](https://github.com/bellshade/JavascriptAlgorithm/issues))
+- Sebelum melakukan kontribusi, usahakan membuat [issue](https://github.com/bellshade/Dart/issues) terlebih dahulu agar tidak bentrok pengerjaan antar kontributor.
+- Hindari penggunaan library/package pada koding (jika dibutuhkan, silahkan diskusi di [issue](https://github.com/bellshade/JavascriptAlgorithm/issues))
 
 ## Kategori yang ada
 
@@ -24,13 +24,13 @@ Basic learning adalah kumpulan implementasi kode materi mendasar dan fundamental
 
 Kumpulan implementasi kode lanjutan dan fitur unik yang ada pada bahasa pemrograman Dart. Jika belum menuntaskan materi basic, kami sarankan untuk mempelajari materi basic terlebih dahulu. 
 
-> Semua implementasi kode untuk Basic Learning bisa ditemukan di **`/bin/lanjutan`** 
+> Semua implementasi kode untuk Basic Learning bisa ditemukan di **`/lib/lanjutan`** 
 
 **3. Struktur Data**
 
 Struktur data adalah cara penyimpanan, penyusunan, dan pengaturan data yang kompleks yang dibuat agar program dapat menggunakan data tersebut dengan efisien.
 
-> Semua implementasi kode untuk Basic Learning bisa ditemukan di **`/bin/lanjutan`** 
+> Semua implementasi kode untuk Basic Learning bisa ditemukan di **`/lib/struktur_data`** 
 
 **4. Algoritma**
 
@@ -49,13 +49,35 @@ Algoritma harus memiliki:
 - memiliki dokumentasi penjelasan yang jelas dan/atau URL ke materi sumber
 - gunakan hasil kembalian / _return_ daripada langsung mencetak ke layar
 
-> Semua implementasi kode untuk Algorithm bisa ditemukan di **`/bin/algorithms`** 
+> Semua implementasi kode untuk Algoritma bisa ditemukan di **`/lib/algoritma`** 
 
 ## Standar Penulisan
 
-Gunakan standar penulisan yang sudah ditentukan oleh Dart, dan direkomendasikan menggunakan fitur code formatter dari Flutter.
+1. Standar Penulisan Pada IDE atau Editor 
+Gunakan standar penulisan yang sudah ditentukan oleh Dart, lalu ubah recommended settings untuk Dart untuk menambah dan mengubah beberapa baris agar menjadi seperti ini:
 
-Untuk dokumentasi mengenai standar penulisan bisa dilihat di link berikut :
+```json
+"dart.lineLength": 150, // <- tambahkan baris ini
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      150 // <- ubah menjadi 150
+    ],
+   ...
+```
+2. Memberikan komentar
+   - `//` digunakan untuk menjelaskan alur kode atau algoritma.
+   - `///` digunakan untuk membuat docs didalam kode untuk menjelaskan kegunaan dari fungsi, class, atau variabel agar bisa memunculkan _pop-up_ docsnya didalam IDE atau Editor secara dinamis.
+
+3. Struktur Folder
+Khusus untuk kontributor, gunakan struktur folder yang sudah disiapkan seperti dibawah ini:
+   - Folder `bin` digunakan untuk menyimpan kode top-level untuk menjalankan materi yang anda buat.
+   - Folder `lib` digunakan untuk menyimpan materi-materi yang disimpan.
+   - Struktur folder yang ada didalam `bin` dan `lib` **wajib sama**.
+   - Folder `test` digunakan untuk melakukan testing kode dari materi dart yang dibuat.
+
+Untuk dokumentasi lengkap mengenai standar penulisan bisa dilihat di link berikut :
 [1. Overview Bahasa Dart](https://dart.dev/guides/language/effective-dart)
 [2. Gaya Penulisan Dart](https://dart.dev/guides/language/effective-dart/style)
 [3. Pembuatan Dokumentasi Kode Dart](https://dart.dev/guides/language/effective-dart/documentation)
@@ -68,6 +90,7 @@ Untuk dokumentasi mengenai standar penulisan bisa dilihat di link berikut :
 **Pull request yang baik**
 
 - lakukan fork pada repository ini
+- usahakan fork anda sudah update sesuai dengan repository asli [bellshade/Dart](https://github.com/bellshade/Dart). Jika belum update, silahkan gunakan fitur `fetch and merge` yang ada di github.
 - setelah melakukan fork anda dibebaskan untuk mengubah atau menambah kode
   - untuk pull request "mengubah" diusahakan anda menerapkan kode yang lebih baik, mudah dan efisien dari segi performa, ukuran kode, dan sebagainya.
 - setelah mengubah, menambah, atau perbaikan dokumentasi, usahakan anda membuat branch baru
@@ -80,7 +103,7 @@ git commit -m "add: menambahkan algoritma baru"
 
 - lakukan push ke branch anda dan kemudian silahkan open pull request
 
-**saran pesan commit**
+**Saran pesan commit**
 
 - `add` untuk menambah kode atau tambahan lainnya
 - `fix` untuk mengubah kode yang sudah ada atau memperbaiki
@@ -92,7 +115,11 @@ pull request akan `merged` jika:
 - mengikuti standar dan arahan dari `CONTRIBUTING.md`
 - lulus test dan cek dari beberapa test yang sudah kami siapkan
 
-**tambahan**
+**Saran pesan Pull Request**
+
+Gunakan template pesan pull request yang sudah disediakan untuk repository Dart di [sini](https://github.com/bellshade/Dart/blob/main/.github/pull_request_template.md).
+
+**Tambahan**
 
 - jika ada kendala atau masalah dalam pull request, anda bisa laporkan masalah pada [issue](https://github.com/bellshade/Dart/issues)
 - jika ada test yang tidak lewat atau gagal, kami akan mengecek kembali perubahan.
