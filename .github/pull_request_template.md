@@ -23,12 +23,12 @@ saya menggunakan (im used):
 
 ## Testing
 
-- [ ] doctesting Dart
 - [ ] analyze lint Dart
+- [ ] doctesting Dart
 
 ## Maintainer
-request maintainer untuk mereiview kode kamu
-usahakan kamu memilih sesuai apa yang telah kamu ubah
+request maintainer untuk mereiview kode kamu usahakan kamu memilih sesuai apa yang telah kamu ubah
+
 **maintainer dart**
 @bellshade/dart-team
 
@@ -36,4 +36,5 @@ usahakan kamu memilih sesuai apa yang telah kamu ubah
 @bellshade/docs-team
 
 > [ID ] Jika ada gagal pada salah satu test kami akan mengeceknya kembali
+
 > [EN] If there is a failure in one of the tests we will check it again
