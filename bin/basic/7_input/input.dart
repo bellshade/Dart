@@ -1,7 +1,5 @@
-import 'dart:io';
+import 'package:bellshade_dart/basic/7_input/input.dart';
 
-void main() {
-  print("Masukan nama anda: ");
-  String? nama = stdin.readLineSync();
-  print("Halo, $nama!");
+main(List<String> args) {
+  Input().jalankan();
 }
