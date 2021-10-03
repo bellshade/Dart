@@ -92,7 +92,8 @@ Untuk dokumentasi lengkap mengenai standar penulisan bisa dilihat di link beriku
 - lakukan fork pada repository ini
 - usahakan fork anda sudah update sesuai dengan repository asli [bellshade/Dart](https://github.com/bellshade/Dart). Jika belum update, silahkan gunakan fitur `fetch and merge` yang ada di github.
 - setelah melakukan fork anda dibebaskan untuk mengubah atau menambah kode
-  - untuk pull request "mengubah" diusahakan anda menerapkan kode yang lebih baik, mudah dan efisien dari segi performa, ukuran kode, dan sebagainya.
+- jalankan perintah `dart pub get` untuk get paket-paket yang dibutuhkan oleh project.
+- untuk pull request "mengubah" diusahakan anda menerapkan kode yang lebih baik, mudah dan efisien dari segi performa, ukuran kode, dan sebagainya.
 - setelah mengubah, menambah, atau perbaikan dokumentasi, usahakan anda membuat branch baru
 
 ```bash
