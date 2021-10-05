@@ -48,4 +48,39 @@ main(List<String> args) {
     'Jarwo': 'Mosasaurus',
   };
   print('Nilai Map (analogi: peliharaan) : $peliharaan');
+
+  // Tipe Data Set
+  // Memberi value Set kosong
+  Set<String> kumpulanNama = {};
+
+  // Langsung memberi value ke dalam Set
+  var karakterKartun = <String>{
+    'Naruto',
+    'Sasuke',
+    'Hinata',
+    'Neji',
+  };
+
+  // Menambahkan data ke dalam Set
+  kumpulanNama.add('Denis');
+  kumpulanNama.add('Adel');
+  print('kumpulanNama = $kumpulanNama');
+
+  karakterKartun.add('Sakura');
+  //Tidak akan ditambahkan kembali karena sudah terdapat value Adit di dalam Set karakterKartun
+  karakterKartun.add('Naruto');
+  print('karakterKartun = $karakterKartun');
+
+  // Menghapus data dari Set
+  karakterKartun.remove('Naruto');
+  karakterKartun.remove('Sakura');
+  // Jika menghapus value yang tidak ada di dalam Set
+  // tidak akan terjadi error karena tipe Set tidak memiliki index atau key
+  karakterKartun.remove('Tanpa Nama');
+  karakterKartun.remove('Neji');
+  print('karakterKartun = $karakterKartun');
+
+  // Mendapatkan panjang Set
+  print('total kumpulanNama = ${kumpulanNama.length}');
+  print('total karakterKartun = ${karakterKartun.length}');
 }
