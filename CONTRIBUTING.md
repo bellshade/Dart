@@ -18,19 +18,19 @@ Semua orang boleh ikut berkontribusi pada repository ini, dengan ketentuan sebag
 
 Basic learning adalah kumpulan implementasi kode materi mendasar dan fundamental untuk pemrograman Dart. Dikemas dengan keterangan kode yang mudah di mengerti sehingga bisa dijadikan referensi untuk kalian yang belajar pemrograman Dart.
 
-> Semua implementasi kode untuk Basic Learning bisa ditemukan di **`/bin/basic`** 
+> Semua implementasi kode untuk Basic Learning bisa ditemukan di **`/basic`** 
 
 **2. Lanjutan**
 
 Kumpulan implementasi kode lanjutan dan fitur unik yang ada pada bahasa pemrograman Dart. Jika belum menuntaskan materi basic, kami sarankan untuk mempelajari materi basic terlebih dahulu. 
 
-> Semua implementasi kode untuk Basic Learning bisa ditemukan di **`/lib/lanjutan`** 
+> Semua implementasi kode untuk Basic Learning bisa ditemukan di **`/lanjutan`** 
 
 **3. Struktur Data**
 
 Struktur data adalah cara penyimpanan, penyusunan, dan pengaturan data yang kompleks yang dibuat agar program dapat menggunakan data tersebut dengan efisien.
 
-> Semua implementasi kode untuk Basic Learning bisa ditemukan di **`/lib/struktur_data`** 
+> Semua implementasi kode untuk Basic Learning bisa ditemukan di **`/struktur_data`** 
 
 **4. Algoritma**
 
@@ -49,7 +49,7 @@ Algoritma harus memiliki:
 - memiliki dokumentasi penjelasan yang jelas dan/atau URL ke materi sumber
 - gunakan hasil kembalian / _return_ daripada langsung mencetak ke layar
 
-> Semua implementasi kode untuk Algoritma bisa ditemukan di **`/lib/algoritma`** 
+> Semua implementasi kode untuk Algoritma bisa ditemukan di **`/algoritma`** 
 
 ## Standar Penulisan
 
@@ -58,12 +58,13 @@ Gunakan standar penulisan yang sudah ditentukan oleh Dart, lalu ubah recommended
 
 ```json
 "dart.lineLength": 150, // <- tambahkan baris ini
-  "[dart]": {
-    "editor.formatOnSave": true,
-    "editor.formatOnType": true,
-    "editor.rulers": [
-      150 // <- ubah menjadi 150
-    ],
+   "[dart]": {
+      "editor.formatOnSave": true,
+      "editor.formatOnType": true,
+      "editor.rulers": [
+         150 // <- ubah menjadi 150
+      ],
+   }
    ...
 ```
 2. Memberikan komentar
@@ -106,10 +107,20 @@ git commit -m "add: menambahkan algoritma baru"
 
 **Saran pesan commit**
 
-- `add` untuk menambah kode atau tambahan lainnya
+- `feat` untuk menambah kode, algoritma atau tambahan lainnya
 - `fix` untuk mengubah kode yang sudah ada atau memperbaiki
 - `docs` untuk mengubah atau membuat dokumentasi
-- `style` untuk mengubah atau memperbaiki style kode untuk contohnya bisa dilihat pada commit yang diatas
+- `add` untuk menambah kode, algoritma atau tambahan lainnya (opsional)
+
+Catatan: pesan commit harus menjelaskan perubahan secara singkat.
+
+Contoh: 
+- &#9746; `feat: test_x.py`
+- &#9745; `feat: tambah unittest untuk algoritma x`
+
+Lebih lengkapnya bisa dilihat di:
+- Bahasa Inggris: [www.conventionalcommits.org/en/v1.0.0](https://www.conventionalcommits.org/en/v1.0.0/)
+- Bahasa Indonesia: [www.conventionalcommits.org/id/v1.0.0](https://www.conventionalcommits.org/id/v1.0.0/)
 
 pull request akan `merged` jika:
 

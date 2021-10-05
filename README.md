@@ -4,25 +4,26 @@
 
 Repositori ini berisi kumpulan dari berbagai macam contoh struktur data, algoritma dan komputasi matematika yang diimplementasikan dengan menggunakan bahasa pemrograman Dart.
 
-## Belajar
+## Untuk Belajar
 
-Jika ingin belajar bahasa Dart dari repositori ini, bisa langsung menggunakan folder `bin` yang ada pada project kalian masing-masing. Lalu isi dari file belajar kalian misal seperti dibawah ini:
+Jika ingin belajar bahasa Dart dari repositori ini, bisa langsung menggunakan folder-folder yang tersedia (Saat ini: `/basic`).
 
-nama file: `belajar_dart.dart`
-kodingan/isi file:
-```dart
-main(List<String> arguments) {
-  // Isi dari kodingan
-}
+Contoh jika ingin menjalankan file Dart pada materi [Hello World](https://github.com/bellshade/Dart/tree/main/basic/1_hello_world) bisa dijalankan dengan 2 cara ini:
+
+**Dengan Shortcut**
+1. Buka file yang ingin dijalankan pada folder materinya
+2. klik <kbd>F5</kbd> pada keyboard pada untuk menjalankan file Dart tersebut
+3. Keluaran/Output akan muncul di `Debug Console` pada IDE atau Editor
+
+**Dengan Perintah**
+1. Pada terminal/cmd, masuk ke folder materi
+2. Ketikkan pada terminal/cmd:
+```bash
+dart basic/1_hello_world/hello_world.dart
 ```
+3. Keluaran/Output akan muncul di terminal/cmd yang digunakan untuk menjalankan file tersebut
 
-lalu run dengan cara:
-
-klik <kbd>F5</kbd> pada keyboard pada file yang dibuka di editor.
-`atau`
-ketikkan pada terminal/cmd: `dart bin/belajar_dart.dart`
-
-## Peraturan dan Pedoman Kontribusi
+## Untuk Berkontribusi
 
 Dipersilahkan bila ingin melakukan open pull requets atau kontribusi pada repositori **Dart**. Sebelum itu, bacalah terlebih dahulu [peraturan dan pedomannya](CONTRIBUTING.md) yang dapat ditemukan pada ``CONTRIBUTING.md``.
 
@@ -31,10 +32,10 @@ Dipersilahkan bila ingin melakukan open pull requets atau kontribusi pada reposi
 Semua *script* yang ada pada repositori ini, dapat diakses dengan cepat lewat link berikut: 
 
 #### Basic
-- [Hello World](https://github.com/bellshade/Dart/tree/main/lib/basic/1_hello_world)
-- [Tipe Data](https://github.com/bellshade/Dart/tree/main/lib/basic/2_tipe_data)
-- [Variabel](https://github.com/bellshade/Dart/tree/main/lib/basic/3_variabel)
-- [Operator dan Logika Aritmatika](https://github.com/bellshade/Dart/tree/main/lib/basic/4_operator_dan_logika_aritmatika)
-- [Kondisi](https://github.com/bellshade/Dart/tree/main/lib/basic/5_kondisi)
-- [Perulangan](https://github.com/bellshade/Dart/tree/main/lib/basic/6_perulangan)
-- [Input](https://github.com/bellshade/Dart/tree/main/lib/basic/7_input)
+- [Hello World](https://github.com/bellshade/Dart/tree/main/basic/1_hello_world)
+- [Tipe Data](https://github.com/bellshade/Dart/tree/main/basic/2_tipe_data)
+- [Variabel](https://github.com/bellshade/Dart/tree/main/basic/3_variabel)
+- [Operator dan Logika Aritmatika](https://github.com/bellshade/Dart/tree/main/basic/4_operator_dan_logika_aritmatika)
+- [Kondisi](https://github.com/bellshade/Dart/tree/main/basic/5_kondisi)
+- [Perulangan](https://github.com/bellshade/Dart/tree/main/basic/6_perulangan)
+- [Input](https://github.com/bellshade/Dart/tree/main/basic/7_input)
