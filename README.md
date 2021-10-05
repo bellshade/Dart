@@ -39,3 +39,4 @@ Semua *script* yang ada pada repositori ini, dapat diakses dengan cepat lewat li
 - [Kondisi](https://github.com/bellshade/Dart/tree/main/basic/5_kondisi)
 - [Perulangan](https://github.com/bellshade/Dart/tree/main/basic/6_perulangan)
 - [Input](https://github.com/bellshade/Dart/tree/main/basic/7_input)
+- [Fungsi](https://github.com/bellshade/Dart/tree/main/basic/8_fungsi)
