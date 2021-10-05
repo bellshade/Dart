@@ -67,17 +67,17 @@ main(List<String> args) {
   print('kumpulanNama = $kumpulanNama');
 
   karakterKartun.add('Sakura');
-  //Tidak akan ditambahkan kembali karena sudah terdapat value Adit di dalam Set karakterKartun
+  //Tidak akan ditambahkan kembali karena sudah terdapat value Naruto di dalam Set karakterKartun
   karakterKartun.add('Naruto');
   print('karakterKartun = $karakterKartun');
 
   // Menghapus data dari Set
   karakterKartun.remove('Naruto');
   karakterKartun.remove('Sakura');
+  karakterKartun.remove('Neji');
   // Jika menghapus value yang tidak ada di dalam Set
   // tidak akan terjadi error karena tipe Set tidak memiliki index atau key
   karakterKartun.remove('Tanpa Nama');
-  karakterKartun.remove('Neji');
   print('karakterKartun = $karakterKartun');
 
   // Mendapatkan panjang Set
