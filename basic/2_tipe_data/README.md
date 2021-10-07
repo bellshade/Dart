@@ -77,3 +77,7 @@ Map peliharaan = {
   'Jarwo': 'Mosasaurus',
 };
 ```
+
+## 7. `Set`
+
+Tipe data Set digunakan untuk merepresentasikan kumpulan atau list dari beberapa nilai yang berbeda satu dengan lainnya (jika di masukkan 2 data yang sama maka hanya ada 1 data yang di terima). Berbeda dengan tipe data `List` atau `Map`, pada tipe data `Set` tidak memiliki `index` atau `key`.
