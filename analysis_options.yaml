@@ -10,6 +10,7 @@ include: package:lints/recommended.yaml
 linter:
   rules:
     - camel_case_types
+    - prefer_single_quotes
 analyzer:
   errors:
     camel_case_types: error
@@ -30,7 +31,6 @@ analyzer:
     unnecessary_string_interpolations: error
     avoid_unused_constructor_parameters: error
     prefer_final_in_for_each: error
-
 # analyzer:
 #   exclude:
 #     - path/to/excluded/files/**
