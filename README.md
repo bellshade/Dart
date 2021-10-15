@@ -4,6 +4,27 @@
 
 Repositori ini berisi kumpulan dari berbagai macam contoh struktur data, algoritma dan komputasi matematika yang diimplementasikan dengan menggunakan bahasa pemrograman Dart.
 
+## Instalasi dan Setup
+
+### Windows
+1. install [chocolatey](https://chocolatey.org/)
+2. jalankan perintah ini di cmd `choco install dart-sdk`
+
+### Linux
+```shell
+sudo apt-get update
+sudo apt-get install apt-transport-https
+sudo sh -c 'wget -qO- https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -'
+sudo sh -c 'wget -qO- https://storage.googleapis.com/download.dartlang.org/linux/debian/dart_stable.list > /etc/apt/sources.list.d/dart_stable.list'
+sudo apt-get update
+sudo apt-get install dart
+```
+
+### MacOS
+```
+brew tap dart-lang/dart
+brew install dart
+```
 ## Untuk Belajar
 
 Jika ingin belajar bahasa Dart dari repositori ini, bisa langsung menggunakan folder-folder yang tersedia (Saat ini: `/basic`).
