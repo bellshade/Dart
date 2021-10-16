@@ -6,6 +6,8 @@ Repositori ini berisi kumpulan dari berbagai macam contoh struktur data, algorit
 
 ## Instalasi dan Setup
 
+Kalau kamu sudah menginstal flutter-sdk maka tidak perlu instal dart-sdk lagi
+
 ### Windows
 1. install [chocolatey](https://chocolatey.org/)
 2. jalankan perintah ini di cmd `choco install dart-sdk`
@@ -25,6 +27,19 @@ sudo apt-get install dart
 brew tap dart-lang/dart
 brew install dart
 ```
+
+## Membuat project pada Dart/Flutter
+
+### Dart
+```
+dart create nama_project
+```
+
+### Flutter
+```
+flutter create nama_project
+```
+
 ## Untuk Belajar
 
 Jika ingin belajar bahasa Dart dari repositori ini, bisa langsung menggunakan folder-folder yang tersedia (Saat ini: `/basic`).
