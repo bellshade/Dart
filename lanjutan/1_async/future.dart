@@ -4,14 +4,6 @@ Future<String> callApi() async {
   return 'Berhasil mengambil data dari API';
 }
 
-// main(List<String> args) async {
-//   print('Mulai program');
-
-//   print(await callApi());
-
-//   print('Akhir program');
-// }
-
 main(List<String> args) {
   print('Mulai program');
 
