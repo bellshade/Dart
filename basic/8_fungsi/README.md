@@ -54,3 +54,7 @@ Input Nama : Budi
 Haloo.. Nama saya Budi
 Umur saya 21
 ```
+
+---
+
+[<< Materi sebelumnya](https://github.com/bellshade/Dart/tree/main/basic/7_input)

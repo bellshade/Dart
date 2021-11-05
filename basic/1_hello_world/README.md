@@ -13,3 +13,7 @@ print('Hello, World!');
 String halo = 'Halo, Dunia!';
 print(halo);
 ```
+
+---
+
+[Materi selanjutnya >>](https://github.com/bellshade/Dart/tree/main/basic/2_tipe_data)

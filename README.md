@@ -102,9 +102,9 @@ code .
 
 ## Mulai Belajar
 
-Jika ingin belajar bahasa Dart dari repositori ini, bisa langsung menggunakan folder-folder yang tersedia (Saat ini: `/basic`).
+Jika ingin belajar bahasa Dart dari repositori ini, bisa langsung menggunakan folder-folder yang tersedia (Saat ini: ['basic'](https://github.com/bellshade/Dart/tree/main/basic)). Silahkan mulai dari materi basic pertama, yaitu [Hello World](https://github.com/bellshade/Dart/tree/main/basic/1_hello_world).
 
-Contoh jika ingin menjalankan file Dart pada materi [Hello World](https://github.com/bellshade/Dart/tree/main/basic/1_hello_world) bisa dijalankan dengan 2 cara ini:
+Jika ingin menjalankan file Dart pada materi, bisa dijalankan dengan 2 cara ini:
 
 **Dengan Shortcut:**
 

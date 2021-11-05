@@ -148,3 +148,7 @@ int a = 7;
 a %= 3; // sama seperti a = a % 3;
 print(a); // 1
 ```
+
+---
+
+[<< Materi sebelumnya](https://github.com/bellshade/Dart/tree/main/basic/3_variabel) | [Materi selanjutnya >>](https://github.com/bellshade/Dart/tree/main/basic/5_kondisi)
