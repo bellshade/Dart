@@ -26,3 +26,7 @@ void main()
 ```
 Halo, nama saya Budi
 ```
+
+---
+
+[<< Materi sebelumnya](https://github.com/bellshade/Dart/tree/main/basic/6_perulangan) | [Materi selanjutnya >>](https://github.com/bellshade/Dart/tree/main/basic/8_fungsi)

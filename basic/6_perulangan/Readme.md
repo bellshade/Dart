@@ -225,3 +225,7 @@ Hasilnya seperti berikut.
 
 Semua bilangan yang di iterasi tampil ke layar.
 Karena sifat `continue` hanya nge-skip baris kode **setelah** dirinya.
+
+---
+
+[<< Materi sebelumnya](https://github.com/bellshade/Dart/tree/main/basic/5_kondisi) | [Materi selanjutnya >>](https://github.com/bellshade/Dart/tree/main/basic/7_input)

@@ -75,3 +75,7 @@ const pi = 22 / 7;
 const jariJari = 7;
 const luasLingkaran = pi * (jariJari * jariJari);
 ```
+
+---
+
+[<< Materi sebelumnya](https://github.com/bellshade/Dart/tree/main/basic/2_tipe_data) | [Materi selanjutnya >>](https://github.com/bellshade/Dart/tree/main/basic/4_operator_dan_logika_aritmatika)

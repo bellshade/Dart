@@ -163,3 +163,7 @@ default:
   print('Hai untuk mu');
 }
 ```
+
+---
+
+[<< Materi sebelumnya](https://github.com/bellshade/Dart/tree/main/basic/4_operator_dan_logika_aritmatika) | [Materi selanjutnya >>](https://github.com/bellshade/Dart/tree/main/basic/6_perulangan)

@@ -1,69 +1,129 @@
 # Dart
 
-![license](https://img.shields.io/github/license/bellshade/Dart?style=for-the-badge)
+<p align="center">
+    <img width="20%" src="https://raw.githubusercontent.com/bellshade/PHP/main/assets/images/logo.png"><br/>
+    Part of Bellshade Project, managed by <a href="http://discord.gg/S4rrXQU"> WPU Discord Community</a> <br>
+    WPU Community is the fastest growing software developer forum initiated by <a href="https://www.youtube.com/c/WebProgrammingUNPAS"> Mr. Sandhika Galih</a> <br>
+    <a href="http://discord.gg/S4rrXQU">
+        <img src="https://img.shields.io/discord/722002048643497994?logo=discord&logoColor=white&style=for-the-badge">
+    </a>
+    <img src="https://img.shields.io/github/license/bellshade/Dart?style=for-the-badge">
+</p>
 
-Repositori ini berisi kumpulan dari berbagai macam contoh struktur data, algoritma dan komputasi matematika yang diimplementasikan dengan menggunakan bahasa pemrograman Dart.
+## Daftar isi
+
+- [Dart](#dart)
+  - [Daftar isi](#daftar-isi)
+  - [Pendahuluan](#pendahuluan)
+  - [Instalasi dan Setup](#instalasi-dan-setup)
+    - [Menggunakan Windows](#menggunakan-windows)
+    - [Menggunakan Linux](#menggunakan-linux)
+    - [MacOS](#macos)
+  - [Membuat project Dart](#membuat-project-dart)
+  - [Mulai Belajar](#mulai-belajar)
+  - [Berkontribusi](#berkontribusi)
+  - [Quick Access](#quick-access)
+      - [Basic](#basic)
+    - [Lanjutan](#lanjutan)
+    - [Algoritma](#algoritma)
+
+## Pendahuluan
+
+Selamat datang di repositori Bellshade Dart, di repositori ini berisi kumpulan dari berbagai macam contoh struktur data, algoritma dan komputasi matematika yang diimplementasikan dengan menggunakan bahasa pemrograman Dart. Materi yang disediakan disini menggunakan bahasa Indonesia agar mudah diikuti dan dipahami.
+
+Semua orang bisa belajar dari repositori Dart ini, tersedia materi basic yang disediakan untuk pemula hingga materi lanjutan yang bisa dipelajari oleh expert. Tersedia juga materi tambahan seperti algoritma atau utilities yang diimplementasikan dalam bahasa Dart.
+
+Untuk penjelasan mengenai bahasa pemrograman Dart silahkan baca selengkapnya di [Wiki repositori ini](https://github.com/bellshade/Dart/wiki) ya.
 
 ## Instalasi dan Setup
 
-Kalau kamu sudah menginstal flutter-sdk maka tidak perlu instal dart-sdk lagi
+> Jika kamu pernah membuat aplikasi menggunakan Flutter dan flutter-sdk sudah terinstall, maka tidak perlu instal dart-sdk lagi karena sudah include didalam flutter-sdk 
 
-### Windows
-1. install [chocolatey](https://chocolatey.org/)
-2. jalankan perintah ini di cmd `choco install dart-sdk`
+Namun, jika kamu hanya ingin mencoba bahasa Dart secara sederhana, online dan tanpa instalasi bisa menggunakan website [dart.dev/#try-dart](https://dart.dev/#try-dart) atau di [dartpad.dev](https://dartpad.dev/?null_safety=true). Untuk di [dartpad.dev](https://dartpad.dev/?null_safety=true) kamu bahkan bisa mencoba running aplikasi Flutter sederhana lho!
 
-### Linux
+Jika ingin memasang dart-sdk di komputer kamu, berikut adalah pilihan dan caranya:
+
+### Menggunakan Windows
+1. Install [chocolatey](https://chocolatey.org/)
+2. Jalankan perintah ini di cmd:
+```shell
+choco install dart-sdk
+```
+3. Secara default, dart-sdk akan terpasang di `C:\tools\dart-sdk.`
+4. Tunggu hingga proses install dart-sdk selesai
+
+### Menggunakan Linux
+1. Lakukan update sistem dan import source untuk dart-sdk
 ```shell
 sudo apt-get update
 sudo apt-get install apt-transport-https
 sudo sh -c 'wget -qO- https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -'
 sudo sh -c 'wget -qO- https://storage.googleapis.com/download.dartlang.org/linux/debian/dart_stable.list > /etc/apt/sources.list.d/dart_stable.list'
+```
+2. Install dart-sdk dengan menjalankan perintah-perintah dibawah ini di terminal secara berurutan:
+```shell
 sudo apt-get update
 sudo apt-get install dart
 ```
+3. Tunggu hingga proses install dart-sdk selesai
 
 ### MacOS
-```
+1. Install [Homebrew](https://brew.sh/)
+2. Jalankan perintah-perintah dibawah ini di terminal secara berurutan:
+```shell
 brew tap dart-lang/dart
 brew install dart
 ```
+3. Tunggu hingga proses install dart-sdk selesai
 
-## Membuat project pada Dart/Flutter
+## Membuat project Dart
 
-### Dart
+Ikuti langkah dibawah ini untuk membuat project Dart
+1. Masuk ke direktori untuk menyimpan project dart, misalnya di `C:\projects\dart\` untuk windows, atau `$HOME/projects/dart/` untuk linux dan macOS
+```shell
+cd C:\projects\dart\
+
+atau
+
+cd $HOME/projects/dart/
 ```
-dart create nama_project
+2. Jalankan perintah dibawah untuk membuat project Dart. Ingat, ganti `'nama_project_kamu'` dengan nama project yang akan dibuat dan **jangan sertakan petiknya**.
+```shell
+dart create 'nama_project_kamu'
+```
+3. Masuk ke folder project yang telah dibuat(**jangan sertakan petiknya**)
+```shell
+cd 'nama_project_kamu'
+```
+4. Buka project yang sudah dibuat menggunakan menggunakan aplikasi editor kesukaan kamu. Contoh jika memakai Visual Studio Code:
+```shell
+code .
 ```
 
-### Flutter
-```
-flutter create nama_project
-```
+## Mulai Belajar
 
-## Untuk Belajar
+Jika ingin belajar bahasa Dart dari repositori ini, bisa langsung menggunakan folder-folder yang tersedia (Saat ini: ['basic'](https://github.com/bellshade/Dart/tree/main/basic)). Silahkan mulai dari materi basic pertama, yaitu [Hello World](https://github.com/bellshade/Dart/tree/main/basic/1_hello_world).
 
-Jika ingin belajar bahasa Dart dari repositori ini, bisa langsung menggunakan folder-folder yang tersedia (Saat ini: `/basic`).
+Jika ingin menjalankan file Dart pada materi, bisa dijalankan dengan 2 cara ini:
 
-Contoh jika ingin menjalankan file Dart pada materi [Hello World](https://github.com/bellshade/Dart/tree/main/basic/1_hello_world) bisa dijalankan dengan 2 cara ini:
-
-**Dengan Shortcut**
+**Dengan Shortcut:**
 
 1. Buka file yang ingin dijalankan pada folder materinya
 2. klik <kbd>F5</kbd> pada keyboard pada untuk menjalankan file Dart tersebut
 3. Keluaran/Output akan muncul di `Debug Console` pada IDE atau Editor
 
-**Dengan Perintah**
+**Dengan Perintah:**
 
 1. Pada terminal/cmd, masuk ke folder materi
 2. Ketikkan pada terminal/cmd:
 
-```bash
+```shell
 dart basic/1_hello_world/hello_world.dart
 ```
 
 3. Keluaran/Output akan muncul di terminal/cmd yang digunakan untuk menjalankan file tersebut
 
-## Untuk Berkontribusi
+## Berkontribusi
 
 Dipersilahkan bila ingin melakukan open pull requets atau kontribusi pada repositori **Dart**. Sebelum itu, bacalah terlebih dahulu [peraturan dan pedomannya](CONTRIBUTING.md) yang dapat ditemukan pada `CONTRIBUTING.md`.
 
