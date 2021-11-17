@@ -15,69 +15,72 @@ Konsep `Promise` dengan `Future` hampir sama yaitu memberikan suatu output yang 
 
 Contohnya jika kita ingin mengambil data dari API.
 Kita tidak ingin program kita _freeze_ pada saat menunggu data dari API berhasil dipanggil.
-Perlu adanya `Future` untuk memberitahu bahwa data tersebut akan ada di **masa depan**.
+Perlu adanya `Future` untuk memberitahu bahwa data tersebut akan datang dari **masa depan**.
 
 ### Contoh Future
 
-Untuk membuat suatu fungsi menjadi **Asynchronous** kita harus memberi _keyword_ `async` dan me-return fungsi tersebut dengan kelas `Future`, jika fungsi tersebut bertujuan untuk mengembalikan nilai.
-Dan jangan lupa kita harus memberi tipe data yang akan dikembalikan pada `Future` tersebut.
+Untuk membuat suatu fungsi menjadi **Asynchronous** kita harus memberi _keyword_ `async` dan me-_return_ fungsi tersebut dengan kelas `Future`. Dan jangan lupa kita harus memberi tipe data yang akan dikembalikan pada `Future` tersebut.
 
 ```dart
-Future<String> callApi() async {
+Future<String> _panggilFuture() async {
+  ...
 }
 ```
 
-Didalam fungsi `callApi()` kita akan seolah-olah ingin mengambil data dari API.
-Dengan menggunakan fungsi `Future.delayed()` kita akan membuat _delay_ dalam 5 detik.
+Didalam fungsi `_panggilFuture()` kita akan seolah-olah ingin menunggu chat dari seseorang dengan menggunakan fungsi `Future.delayed()` kita akan membuat _delay_ dalam 3 detik.
+
 Keyword `await` disini berfungsi untuk menunggu _delay_ tersebut selesai dan lanjut eksekusi perintah selanjutnya yaitu `return`.
 
 ```dart
-await Future.delayed(Duration(seconds: 5));
+  await Future.delayed(Duration(seconds: 3));
 
-return 'Berhasil mengambil data dari API';
+  return 'B: Aku datang!';
 ```
 
-Berikut isi perintah yang ada pada fungsi `main()`.
-Bisa dilihat kita menunggu data dari API berhasil diambil.
+Berikut isi perintah yang ada pada fungsi `_contohAsyncAwait()`.
+Bisa dilihat kita menunggu chat yang datang dari seseorang, yang mana menunggu chat datang terlebih dahulu lalu membalasnya dengan segera.
 
 ```dart
-main(List<String> args) async {
-  print('Mulai program');
+void _contohAsyncAwait() async {
+  print('A: Aku berangkat...');
 
-  print(await callApi());
+  print(await _panggilFuture()); // memanggil future menggunakan await
 
-  print('Akhir program');
+  print('A: Aku juga baru datang!');
 }
 ```
 
 Output dari program diatas seperti berikut.
 
-```dart
-Mulai program
-Berhasil mengambil data dari API // delay 5 detik
-Akhir program
+```shell
+A: Aku berangkat...
+B: Aku datang!            // delay 3 detik
+A: Aku juga baru datang!  // setelah delay selesai
 ```
 
-Adapun jika kita tidak ingin menunggu data dari API berhasil dipanggil sebagai berikut.
-Pada program akan dieksekusi secara **Synchronous** yaitu secara berutan.
-Karena fungsi `callApi()` merupakan **Asynchronous**, maka kita menggunakan `then` untuk mendapat data yang delay 5 detik tersebut.
+Adapun jika kita tidak ingin menunggu data dari Future berhasil dipanggil terlebih dahulu maka program akan dieksekusi secara **Synchronous** yaitu secara berutan dengan menggunakan `.then` pada Future yang dipanggil.
+
+Metode ini akan membuat baris kode yang ada setelah pemanggilan Future akan dijalankan secara berurutan, meskipun Future yang dipanggil sebelumnya belum selesai.
 
 ```dart
-main(List<String> args) {
-  print('Mulai program');
+void _contohAsyncThen() {
+  print('Contoh memanggil future menggunakan .then:');
+  print('A: Kamu sampai mana?');
 
-  callApi().then((String data) => print(data));
+  _panggilFuture().then((String data) {
+    print(data);
+  }); // memanggil future menggunakan .then
 
-  print('Akhir program');
+  print('A: Lama banget dia...');
 }
 ```
 
 Output dari program diatas seperti berikut.
 
-```dart
-Mulai program
-Akhir program
-Berhasil mengambil data dari API // delay 5 detik
+```shell
+A: Kamu sampai mana?
+A: Lama banget dia... // melewati future yang sedang delay
+B: Aku datang!        // future datang terlambat 3 detik
 ```
 
 ## Stream Dart
