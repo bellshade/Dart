@@ -168,3 +168,5 @@ Menutup write
 ```
 
 Bisa dilihat pada blok `catch` menerima exception yang dilempar oleh `throw` dan baris kode untuk menutup penulisan file pada blok `finally` tetap tereksekusi.
+
+[<< Materi sebelumnya](/lanjutan/1_async/) | [Materi selanjutnya >>](/lanjutan/3_class/)
