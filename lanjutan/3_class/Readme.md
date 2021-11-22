@@ -159,7 +159,7 @@ void main() {
 }
 ```
 
-Akan tetapi kita bisa membuat hal tersebut menjadi lebih sederhana menggunakan **Cascase Operator**.
+Akan tetapi kita bisa membuat hal tersebut menjadi lebih sederhana menggunakan **Cascade Operator**.
 
 ```dart
 void main() {
@@ -170,7 +170,7 @@ void main() {
 }
 ```
 
-Perlu diperhatikan posisi titik koma berada di akhir pada saat selesai menggunakan **Cascase Operator**.
+Perlu diperhatikan posisi titik koma berada di akhir pada saat selesai menggunakan **Cascade Operator**.
 
 ### Assign variable with named parameter
 
