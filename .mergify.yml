@@ -1,0 +1,48 @@
+pull_request_rules:
+  - name: ci testing jika sukses ke squash dengan label
+    conditions:
+      - check-success=build
+      - base=main
+      - label=ready-to-merge
+    actions:
+      comment:
+        message: Terima kasih atas kontribusinya @{{author}}!
+      label:
+        add:
+            - sudah direview!
+      merge:
+        method: squash
+
+  - name: dart label
+    conditions:
+      - files~=\.dart$
+    actions:
+      label:
+        add:
+          - dart files
+          - request dart-team untuk review
+
+  - name: markdown label
+    conditions:
+      - files~=\.md$
+    actions:
+      label:
+        add:
+          - markdown files
+          - request docs-team untuk review
+
+  - name: review docs-team untuk file markdown
+    conditions:
+      - label=markdown files
+    actions:
+      request_reviews:
+        teams:
+          - "@nomadkode"
+
+  - name: review dart-team untuk file markdown
+    conditions:
+      - label=dart files
+    actions:
+      request_reviews:
+        teams:
+          - "@bellshade/dart-team"
