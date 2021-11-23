@@ -9,3 +9,6 @@ Materi-materi lanjutan yang tersedia di Dart ini antara lain:
 
 2. [Exception](https://github.com/bellshade/Dart/tree/main/lanjutan/2_exception/)<br>
    Menangani error Runtime yang terjadi pada sebuah program agar program berjalan tanpa _force close_.
+
+3. [Class](https://github.com/bellshade/Dart/tree/main/lanjutan/3_class/)<br>
+   Memperkenalkan Class pada pemrograman Dart.
