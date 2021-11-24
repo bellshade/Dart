@@ -31,14 +31,6 @@ pull_request_rules:
           - markdown files
           - request docs-team untuk review
 
-  - name: review docs-team untuk file markdown
-    conditions:
-      - label=markdown files
-    actions:
-      request_reviews:
-        teams:
-          - "@nomadkode"
-
   - name: review dart-team untuk file markdown
     conditions:
       - label=dart files
