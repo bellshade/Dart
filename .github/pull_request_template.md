@@ -1,23 +1,20 @@
-<!-- mention issue yang ingin kamu tutup dengan PR ini -->
-<!-- Contoh: Closes #1 -->
-
 ## Deskripsi (Description)
 
 <!-- deskripsikan tentang perubahan yang kamu berikan -->
-- [ ] saya menambahkan algoritma terbaru
-- [ ] saya memperbaiki algoritma yang sudah ada
-- [ ] saya memperbaiki dokumentasi
-- [ ] saya menambah dokumentasi
+- [ ] Saya menambahkan algoritma terbaru
+- [ ] Saya memperbaiki algoritma yang sudah ada
+- [ ] Saya memperbaiki dokumentasi
+- [ ] Saya menambah dokumentasi
 
 ## Syarat Kontributor (Contributor Requirements)
 
-- [ ] saya sudah membaca (i have read) dan sudah menyetujui (agree) semua yang ada di [CONTRIBUTING](https://github.com/bellshade/Dart/blob/main/CONTRIBUTING.md)
-- [ ] saya telah menambahkan docs yang memberikan penjelasan maksud dari kode yang saya buat
-- [ ] saya menggunakan bahasa indonesia untuk memberikan penjelasan dari kode yang saya buat
+- [ ] Saya sudah membaca dan menyetujui semua peraturan yang ada di [CONTRIBUTING.md](https://github.com/bellshade/Dart/blob/main/CONTRIBUTING.md)
+- [ ] Saya telah menambahkan docs yang memberikan penjelasan maksud dari kode yang Saya buat
+- [ ] Saya menggunakan bahasa Indonesia untuk memberikan penjelasan dari kode yang Saya buat
 
-## Lingkungan (Environment)
+## Lingkungan
 
-saya menggunakan (im used):
+Saya menggunakan:
 
 - [ ] versi Dart terbaru
 
@@ -26,15 +23,12 @@ saya menggunakan (im used):
 - [ ] analyze lint Dart
 - [ ] doctesting Dart
 
-## Maintainer
-request maintainer untuk mereiview kode kamu usahakan kamu memilih sesuai apa yang telah kamu ubah
+## Issue
 
-**maintainer dart**
-@bellshade/dart-team
+<!-- mention issue yang ingin kamu tutup dengan PR ini -->
+<!-- Contoh: Closes #1 -->
+Issue: 
 
-**maintainer dokumentasi**
-@bellshade/docs-team
-
-> [ID ] Jika ada gagal pada salah satu test kami akan mengeceknya kembali
-
+---
+> [ID] Jika ada gagal pada salah satu test kami akan mengeceknya kembali
 > [EN] If there is a failure in one of the tests we will check it again
