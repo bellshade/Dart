@@ -1,19 +1,36 @@
+# Bot pull request untuk Bellshade Dart
+# Command untuk refresh mergify jika ada perubahan pada file config
+# @Mergifyio refresh
+# gunakan dengan cara comment pada pull request
 pull_request_rules:
   - name: ci testing jika sukses ke squash dengan label
     conditions:
+      # rule ketika auto merge dijalankan :
+      # jika workflow passed maka akan dicentang
+      # jika terapprove oleh lebih dari atau sama dengan 2 maintainer maka akan dicentang
+      # jika pull request pada branch main maka akan dicentang
+      # jika diberikan label 'ready-to-merge' akan dicentang
       - check-success=build
+      - "#approved-reviews-by>=2"
       - base=main
       - label=ready-to-merge
+    # jika semua rule sudah di centang maka fungsi automerge akan dijalankan
     actions:
       comment:
+        # ketika semua rule diatas sudah djalankan maka bot akan memberikan komentar
+        # pada kontributor yang melakukan pull request
         message: Terima kasih atas kontribusinya @{{author}}!
       label:
         add:
+            # ketika sudah di merge maka akan menambahkan label 'sudah direview!'
             - sudah direview!
       merge:
-        method: squash
+        # metode merge yang digunakan oleh bot automerge saat semua kondisi terpenuhi
+        method: merge
 
-  - name: dart label
+    # menambahkan label 'dart files' & 'request dart-team untuk review'
+    # ketika pull requestnya terdapat file .dart
+  - name: Dart label
     conditions:
       - files~=\.dart$
     actions:
@@ -22,7 +39,9 @@ pull_request_rules:
           - dart files
           - request dart-team untuk review
 
-  - name: markdown label
+    # menambahkan label 'markdown files' & 'request docs-team untuk review'
+    # ketika pull requestnya terdapat file .md
+  - name: Markdown label
     conditions:
       - files~=\.md$
     actions:
@@ -31,10 +50,20 @@ pull_request_rules:
           - markdown files
           - request docs-team untuk review
 
-  - name: review dart-team untuk file markdown
+    # me-mention maintainer jika terdapat label 'dart files'
+  - name: Review dart-team untuk file Dart
     conditions:
       - label=dart files
     actions:
       request_reviews:
         teams:
           - "@bellshade/dart-team"
+
+    # me-mention docs team jika terdapat label 'markdown files'
+  - name: Review docs-team untuk file Markdown
+    conditions:
+      - label=markdown files
+    actions:
+      request_reviews:
+        users:
+          - nomadkode
