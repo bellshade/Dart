@@ -15,7 +15,7 @@ Fungsi biasanya akan mengembalikan sebuah nilai dari hasil prosesnya. Karena itu
 ##  Parameter
 Jenis-jenis fungsi yang telah disebutkan tadi dapat ditambahkan parameter untuk membuat fungsi lebih dinamis. tanda kurung setelah nama fungsi merupakan parameter dari fungsi tersebut `void namaFungsi (String Parameter) {}`. Penggunaan parameter harus diawali dari tipe data parameter tersebut.
 
-```
+```dart
 import 'dart:io';
 
 int hitungUsia(int tahun) {
@@ -46,7 +46,7 @@ main() {
 ```
 
 **Menghasilkan:**
-```
+```shell
 Perkenalan
 Input Tahun Lahir : 2000
 Input Nama : Budi

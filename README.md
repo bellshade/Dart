@@ -21,6 +21,7 @@
     - [MacOS](#macos)
   - [Membuat project Dart](#membuat-project-dart)
   - [Mulai Belajar](#mulai-belajar)
+  - [Menjalankan Kode](#menjalankan-kode)
   - [Berkontribusi](#berkontribusi)
   - [Quick Access](#quick-access)
       - [Basic](#basic)
@@ -102,7 +103,20 @@ code .
 
 ## Mulai Belajar
 
-Jika ingin belajar bahasa Dart dari repositori ini, bisa langsung menggunakan folder-folder yang tersedia (Saat ini: ['basic'](https://github.com/bellshade/Dart/tree/main/basic)). Silahkan mulai dari materi basic pertama, yaitu [Hello World](https://github.com/bellshade/Dart/tree/main/basic/1_hello_world).
+Mari belajar bahasa pemrograman Dart dengan materi basic yang sudah tersedia di repository ini. Berikut adalah tabel untuk urutan belajar dasar. 
+
+| Langkah | Topik | Target Pembelajaran | Video Rujukan | Materi |
+| :-----: | :---: | :-----------------: | :-----------: | :----: |
+|   01    | Pengenalan bahasa pemograman Dart | Memahami program dasar Dart | [Video](https://youtu.be/uHyfQV0kbgo) | [Hello World](https://github.com/bellshade/Dart/tree/main/basic/1_hello_world) |
+|   02    | Tipe Data | Memahami perbedaan & macam-macam tipe data | [Video](https://youtu.be/BkN3r8yTjTA) | [Hello World](https://github.com/bellshade/Dart/tree/main/basic/2_tipe_data) |
+|   03    | Variabel | Memahami perbedaan & macam-macam variabel | [Video (Final & Const)](https://youtu.be/OiHp5BKnuiE) & [Video (Var & Dynamic)](https://youtu.be/7OuKnyhakcY) | [Hello World](https://github.com/bellshade/Dart/tree/main/basic/3_variabel) |
+|   04    | Operator & Logika Aritmatika | Memahami operasi perhitungan matematis | *belum ada* | [Hello World](https://github.com/bellshade/Dart/tree/main/basic/4_operator_dan_logika_aritmatika) |
+|   05    | Kondisi | Memahami Operator Perbandingan, Operator Logika dan Ekspresi Bersyarat | [Video](https://youtu.be/e9hYhWwo89k) | [Hello World](https://github.com/bellshade/Dart/tree/main/basic/5_kondisi) |
+|   06    | Perulangan | Memahami perbedaan & macam-macam perulangan | [Video](https://youtu.be/dhJuvzp-U68) | [Hello World](https://github.com/bellshade/Dart/tree/main/basic/6_perulangan) |
+|   07    | Input | Memahami cara kerja inputan user pada saat program dijalankan | *belum ada* | [Hello World](https://github.com/bellshade/Dart/tree/main/basic/7_input) |
+|   08    | Fungsi | Memahami macam-macam fungsi dan kegunaannya | [Video](https://youtu.be/XCJqCwV0Mao) | [Hello World](https://github.com/bellshade/Dart/tree/main/basic/8_fungsi) |
+
+## Menjalankan Kode
 
 Jika ingin menjalankan file Dart pada materi, bisa dijalankan dengan 2 cara ini:
 
