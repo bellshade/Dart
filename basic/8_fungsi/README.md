@@ -64,11 +64,11 @@ Positional Parameter adalah sebuah parameter yang dimana ketika fungsi dipanggil
 Contoh:
 
 ```DART
-void pembagian(nilai1, nilai2){
+void pembagian(nilai1, nilai2) {
   print(nilai1/nilai2);
 }
 
-void main(){
+void main() {
   pembagian(4, 2)
   // 4 akan masuk ke parameter nilai1, sedangkan 2 akan masuk ke parameter nilai2
   // hasil: 2
@@ -90,11 +90,11 @@ Named Pameter adalah sebuah parameter yang membebaskan kita untuk memberikan pos
 Contoh:
 
 ```DART
-void pembagian({ nilai1, nilai2 }){
+void pembagian({ nilai1, nilai2 }) {
   print(nilai1/nilai2);
 }
 
-void main(){
+void main() {
   pembagian(nilai2: 2, nilai1: 4)
   // nilai akan masuk menyesuaikan key yang ada
   // hasil: 2
@@ -110,16 +110,15 @@ Optional parameter adalah sebuah argument tidak wajib diberikan jika parameter t
 Contoh:
 
 ```DART
-void penjumlahan(nilai1, nilai2, [nilai3]){
-  if(nilai3 != null) {
+void penjumlahan(nilai1, nilai2, [nilai3]) {
+  if (nilai3 != null) {
     print(nilai1/nilai2/nilai3);
   } else {
     print(nilai1/nilai2);
   }
-
 }
 
-void main(){
+void main() {
   penjumlahan(4, 2) // hasil: 6
   penjumlahan(4, 2, 4) // hasil: 10
 }
