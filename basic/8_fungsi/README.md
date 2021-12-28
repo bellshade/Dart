@@ -124,6 +124,24 @@ void main() {
 }
 ```
 
+#### Required Parameter
+
+Required parameter adalah sebuah argument wajib diberikan jika parameter tersedia, untuk membuat parameter menjadi optional cukup menambahkan sebuah syntax `required` pada masing-masing parameter.
+
+Contoh:
+
+```DART
+void pembagian({ required nilai1, required nilai2 }) {
+  print(nilai1/nilai2);
+}
+
+void main() {
+  pembagian(nilai2: 2, nilai1: 4)
+  // jika sebuah parameter yang diberikan syntax required tidak diisi maka akan memberikan peringatan error
+  // hasil: 2
+}
+```
+
 ---
 
 [<< Materi sebelumnya](https://github.com/bellshade/Dart/tree/main/basic/7_input)
