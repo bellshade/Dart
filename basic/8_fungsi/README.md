@@ -131,7 +131,6 @@ Required parameter adalah sebuah argument wajib diberikan jika parameter tersedi
 Contoh:
 
 ```DART
-<<<<<<< HEAD
 void pembagian({ required int nilai1, required int nilai2 }) {
   print(nilai1/nilai2);
 }
@@ -140,18 +139,6 @@ void main() {
   // jika sebuah parameter yang diberikan syntax required tidak diisi maka akan memberikan peringatan error
   // hasil pembagian: 2.0
 }
-=======
-void pembagian({ required nilai1, required nilai2 }) {
-  print(nilai1/nilai2);
-}
-
-void main() {
-  pembagian(nilai2: 2, nilai1: 4)
-  // jika sebuah parameter yang diberikan syntax required tidak diisi maka akan memberikan peringatan error
-  // hasil: 2
-}
-```
->>>>>>> 1267ebc0a67bcbfecb97f3cc92854fe6124550a2
 
 ---
 
