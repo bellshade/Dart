@@ -64,14 +64,14 @@ Positional Parameter adalah sebuah parameter yang dimana ketika fungsi dipanggil
 Contoh:
 
 ```DART
-void pembagian(nilai1, nilai2) {
+void pembagian(int nilai1, int nilai2) {
   print(nilai1/nilai2);
 }
 
 void main() {
-  pembagian(4, 2)
+  pembagian(4, 2);
   // 4 akan masuk ke parameter nilai1, sedangkan 2 akan masuk ke parameter nilai2
-  // hasil: 2
+  // hasil pembagian: 2.0
 }
 ```
 
@@ -90,14 +90,14 @@ Named Pameter adalah sebuah parameter yang membebaskan kita untuk memberikan pos
 Contoh:
 
 ```DART
-void pembagian({ nilai1, nilai2 }) {
-  print(nilai1/nilai2);
+void pembagian2({int? nilai1, int? nilai2}) {
+  print(nilai1! / nilai2!);
 }
 
 void main() {
-  pembagian(nilai2: 2, nilai1: 4)
+  pembagian(nilai2: 2, nilai1: 4);
   // nilai akan masuk menyesuaikan key yang ada
-  // hasil: 2
+  // hasil pembagian: 2.0
 }
 ```
 
@@ -110,19 +110,35 @@ Optional parameter adalah sebuah argument tidak wajib diberikan jika parameter t
 Contoh:
 
 ```DART
-void penjumlahan(nilai1, nilai2, [nilai3]) {
+void penjumlahan(int nilai1, int nilai2, [int? nilai3]) {
   if (nilai3 != null) {
-    print(nilai1/nilai2/nilai3);
+    print(nilai1+nilai2+nilai3);
   } else {
-    print(nilai1/nilai2);
+    print(nilai1+nilai2);
   }
 }
 
 void main() {
-  penjumlahan(4, 2) // hasil: 6
-  penjumlahan(4, 2, 4) // hasil: 10
+  penjumlahan(4, 2); // hasil penjumlahan: 6
+  penjumlahan(4, 2, 4); // hasil penjumlahan: 10
 }
 ```
+
+#### Required Parameter
+
+Required parameter adalah sebuah argument wajib diberikan jika parameter tersedia, untuk membuat parameter menjadi optional cukup menambahkan sebuah syntax `required` pada masing-masing parameter.
+
+Contoh:
+
+```DART
+void pembagian({ required int nilai1, required int nilai2 }) {
+  print(nilai1/nilai2);
+}
+void main() {
+  pembagian(nilai2: 2, nilai1: 4);
+  // jika sebuah parameter yang diberikan syntax required tidak diisi maka akan memberikan peringatan error
+  // hasil pembagian: 2.0
+}
 
 ---
 
