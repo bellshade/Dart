@@ -10,6 +10,34 @@ void perkenalan(String nama) {
   print('Haloo.. Nama saya $nama');
 }
 
+/* 
+ *  Jenis Parameter
+ */
+
+// Positional Parameter
+void pembagian1(nilai1, nilai2) {
+  print(nilai1 / nilai2);
+}
+
+// Named Parameter
+void pembagian2({int? nilai1, int? nilai2}) {
+  print(nilai1! / nilai2!);
+}
+
+// Optional Parameter
+void penjumlahan(int nilai1, int nilai2, [int? nilai3]) {
+  if (nilai3 != null) {
+    print(nilai1 + nilai2 + nilai3);
+  } else {
+    print(nilai1 + nilai2);
+  }
+}
+
+// Required Parameter
+void pembagian3({required int nilai1, required int nilai2}) {
+  print(nilai1 / nilai2);
+}
+
 main() {
   print('Perkenalan');
 
@@ -32,4 +60,17 @@ main() {
 
   //mencetak nilai usia
   print('Umur saya $usia');
+  
+  // Positional Parameter
+  pembagian1(4, 2);
+
+  // Named Parameter
+  pembagian2(nilai2: 2, nilai1: 4);
+
+  // Optional Parameter
+  penjumlahan(4, 2);
+  penjumlahan(4, 2, 4);
+
+  // Required Parameter
+  pembagian3(nilai2: 2, nilai1: 4);
 }
