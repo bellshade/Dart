@@ -24,7 +24,7 @@
   - [Menjalankan Kode](#menjalankan-kode)
   - [Berkontribusi](#berkontribusi)
   - [Quick Access](#quick-access)
-      - [Basic](#basic)
+    - [Basic](#basic)
     - [Lanjutan](#lanjutan)
     - [Algoritma](#algoritma)
 
@@ -38,49 +38,62 @@ Untuk penjelasan mengenai bahasa pemrograman Dart silahkan baca selengkapnya di 
 
 ## Instalasi dan Setup
 
-> Jika kamu pernah membuat aplikasi menggunakan Flutter dan flutter-sdk sudah terinstall, maka tidak perlu instal dart-sdk lagi karena sudah include didalam flutter-sdk 
+> Jika kamu pernah membuat aplikasi menggunakan Flutter dan flutter-sdk sudah terinstall, maka tidak perlu instal dart-sdk lagi karena sudah include didalam flutter-sdk
 
 Namun, jika kamu hanya ingin mencoba bahasa Dart secara sederhana, online dan tanpa instalasi bisa menggunakan website [dart.dev/#try-dart](https://dart.dev/#try-dart) atau di [dartpad.dev](https://dartpad.dev/?null_safety=true). Untuk di [dartpad.dev](https://dartpad.dev/?null_safety=true) kamu bahkan bisa mencoba running aplikasi Flutter sederhana lho!
 
 Jika ingin memasang dart-sdk di komputer kamu, berikut adalah pilihan dan caranya:
 
 ### Menggunakan Windows
+
 1. Install [chocolatey](https://chocolatey.org/)
 2. Jalankan perintah ini di cmd:
+
 ```shell
 choco install dart-sdk
 ```
+
 3. Secara default, dart-sdk akan terpasang di `C:\tools\dart-sdk.`
 4. Tunggu hingga proses install dart-sdk selesai
 
 ### Menggunakan Linux
+
 1. Lakukan update sistem dan import source untuk dart-sdk
+
 ```shell
 sudo apt-get update
 sudo apt-get install apt-transport-https
 sudo sh -c 'wget -qO- https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -'
 sudo sh -c 'wget -qO- https://storage.googleapis.com/download.dartlang.org/linux/debian/dart_stable.list > /etc/apt/sources.list.d/dart_stable.list'
 ```
+
 2. Install dart-sdk dengan menjalankan perintah-perintah dibawah ini di terminal secara berurutan:
+
 ```shell
 sudo apt-get update
 sudo apt-get install dart
 ```
+
 3. Tunggu hingga proses install dart-sdk selesai
 
 ### MacOS
+
 1. Install [Homebrew](https://brew.sh/)
 2. Jalankan perintah-perintah dibawah ini di terminal secara berurutan:
+
 ```shell
 brew tap dart-lang/dart
 brew install dart
 ```
+
 3. Tunggu hingga proses install dart-sdk selesai
 
 ## Membuat project Dart
 
 Ikuti langkah dibawah ini untuk membuat project Dart
+
 1. Masuk ke direktori untuk menyimpan project dart, misalnya di `C:\projects\dart\` untuk windows, atau `$HOME/projects/dart/` untuk linux dan macOS
+
 ```shell
 cd C:\projects\dart\
 
@@ -88,33 +101,39 @@ atau
 
 cd $HOME/projects/dart/
 ```
+
 2. Jalankan perintah dibawah untuk membuat project Dart. Ingat, ganti `'nama_project_kamu'` dengan nama project yang akan dibuat dan **jangan sertakan petiknya**.
+
 ```shell
 dart create 'nama_project_kamu'
 ```
+
 3. Masuk ke folder project yang telah dibuat(**jangan sertakan petiknya**)
+
 ```shell
 cd 'nama_project_kamu'
 ```
+
 4. Buka project yang sudah dibuat menggunakan menggunakan aplikasi editor kesukaan kamu. Contoh jika memakai Visual Studio Code:
+
 ```shell
 code .
 ```
 
 ## Mulai Belajar
 
-Mari belajar bahasa pemrograman Dart dengan materi basic yang sudah tersedia di repository ini. Berikut adalah tabel untuk urutan belajar dasar. 
+Mari belajar bahasa pemrograman Dart dengan materi basic yang sudah tersedia di repository ini. Berikut adalah tabel untuk urutan belajar dasar.
 
-| Langkah | Topik | Target Pembelajaran | Video Rujukan | Materi |
-| :-----: | :---: | :-----------------: | :-----------: | :----: |
-|   01    | Pengenalan bahasa pemograman Dart | Memahami program dasar Dart | [Video](https://youtu.be/uHyfQV0kbgo) | [Hello World](https://github.com/bellshade/Dart/tree/main/basic/1_hello_world) |
-|   02    | Tipe Data | Memahami perbedaan & macam-macam tipe data | [Video](https://youtu.be/BkN3r8yTjTA) | [Hello World](https://github.com/bellshade/Dart/tree/main/basic/2_tipe_data) |
-|   03    | Variabel | Memahami perbedaan & macam-macam variabel | [Video (Final & Const)](https://youtu.be/OiHp5BKnuiE) & [Video (Var & Dynamic)](https://youtu.be/7OuKnyhakcY) | [Hello World](https://github.com/bellshade/Dart/tree/main/basic/3_variabel) |
-|   04    | Operator & Logika Aritmatika | Memahami operasi perhitungan matematis | *belum ada* | [Hello World](https://github.com/bellshade/Dart/tree/main/basic/4_operator_dan_logika_aritmatika) |
-|   05    | Kondisi | Memahami Operator Perbandingan, Operator Logika dan Ekspresi Bersyarat | [Video](https://youtu.be/e9hYhWwo89k) | [Hello World](https://github.com/bellshade/Dart/tree/main/basic/5_kondisi) |
-|   06    | Perulangan | Memahami perbedaan & macam-macam perulangan | [Video](https://youtu.be/dhJuvzp-U68) | [Hello World](https://github.com/bellshade/Dart/tree/main/basic/6_perulangan) |
-|   07    | Input | Memahami cara kerja inputan user pada saat program dijalankan | *belum ada* | [Hello World](https://github.com/bellshade/Dart/tree/main/basic/7_input) |
-|   08    | Fungsi | Memahami macam-macam fungsi dan kegunaannya | [Video](https://youtu.be/XCJqCwV0Mao) | [Hello World](https://github.com/bellshade/Dart/tree/main/basic/8_fungsi) |
+| Langkah |               Topik               |                          Target Pembelajaran                           |                                                 Video Rujukan                                                 |                                                        Materi                                                        |
+| :-----: | :-------------------------------: | :--------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------: |
+|   01    | Pengenalan bahasa pemograman Dart |                      Memahami program dasar Dart                       |                                     [Video](https://youtu.be/uHyfQV0kbgo)                                     |                    [Hello World](https://github.com/bellshade/Dart/tree/main/basic/1_hello_world)                    |
+|   02    |             Tipe Data             |               Memahami perbedaan & macam-macam tipe data               |                                     [Video](https://youtu.be/BkN3r8yTjTA)                                     |                      [Tipe Data](https://github.com/bellshade/Dart/tree/main/basic/2_tipe_data)                      |
+|   03    |             Variabel              |               Memahami perbedaan & macam-macam variabel                | [Video (Final & Const)](https://youtu.be/OiHp5BKnuiE) & [Video (Var & Dynamic)](https://youtu.be/7OuKnyhakcY) |                       [Variabel](https://github.com/bellshade/Dart/tree/main/basic/3_variabel)                       |
+|   04    |   Operator & Logika Aritmatika    |                 Memahami operasi perhitungan matematis                 |                                                  _belum ada_                                                  | [Operator dan Logika Aritmatika](https://github.com/bellshade/Dart/tree/main/basic/4_operator_dan_logika_aritmatika) |
+|   05    |              Kondisi              | Memahami Operator Perbandingan, Operator Logika dan Ekspresi Bersyarat |                                     [Video](https://youtu.be/e9hYhWwo89k)                                     |                        [Kondisi](https://github.com/bellshade/Dart/tree/main/basic/5_kondisi)                        |
+|   06    |            Perulangan             |              Memahami perbedaan & macam-macam perulangan               |                                     [Video](https://youtu.be/dhJuvzp-U68)                                     |                     [Perulangan](https://github.com/bellshade/Dart/tree/main/basic/6_perulangan)                     |
+|   07    |               Input               |     Memahami cara kerja inputan user pada saat program dijalankan      |                                                  _belum ada_                                                  |                          [Input](https://github.com/bellshade/Dart/tree/main/basic/7_input)                          |
+|   08    |              Fungsi               |              Memahami macam-macam fungsi dan kegunaannya               |                                     [Video](https://youtu.be/XCJqCwV0Mao)                                     |                         [Fungsi](https://github.com/bellshade/Dart/tree/main/basic/8_fungsi)                         |
 
 ## Menjalankan Kode
 
