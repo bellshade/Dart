@@ -16,6 +16,7 @@ Berikut beberapa yang akan kita bahas tentang kelas:
 - [Method](#method)
   - [Static variable](#static-variable)
   - [Static method](#static-method)
+  - [Callable class](#callable-class)
 
 ## Constructor
 
@@ -259,6 +260,43 @@ class Hewan {
 
 void main() {
   Hewan.panggilNama();
+}
+```
+
+### Callable class
+
+Sebuah method yang sama seperti memanggil sebuah fungsi tetapi dari sebuah class
+
+#### Catatan
+
+_Dart tidak support dengan banyak callable class yaitu jika mencoba membuat lebih dari satu fungsi yang dapat memanggil class yang sama akan menampilkan error_
+
+```dart
+class Hewan {
+  final String nama;
+
+  const Hewan({required this.nama});
+
+  // Tanpa return type
+  void call() {
+    print('Namaku adalah ' + nama);
+  }
+}
+
+class Kucing {
+  // Dengan return type
+  String call(String nama) {
+    return 'Namakau adalah ' + nama;
+  }
+}
+
+void main() {
+  var hewan = Hewan(nama: 'Johnny');
+  var kucing = Kucing();
+
+  // Memanggil fungsi `call()`
+  hewan();
+  print(kucing('Sins'));
 }
 ```
 
