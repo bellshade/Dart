@@ -23,53 +23,66 @@ Tipe data bool atau boolean digunakan untuk merepresentasikan nilai boolean (tru
 Tipe data List digunakan untuk merepresentasikan kumpulan atau list dari beberapa nilai. List dalam Dart sama dengan Array di bahasa pemrograman Lain.
 
 Dalam Dart ada 2 tipe List berdasarkan penentuan panjangnya, yaitu Fixed dan Growable.
+
 - `Fixed` : List sudah ditentukan panjangnya diawal dan tidak bisa diubah-ubah lagi panjangnya.
 
-    Untuk pemdeklarasikan List dengan panjang yang tetap bisa menggunakan constructor `List.filled()`.
-    Contoh:
-    ```dart
-    List<int> listFixedInteger = List.filled(3, 0);
-    ```
-    Maksud dari kode diatas adalah membuat List dengan panjang yang tetap **sepanjang 3 item**, dan **0 sebagai value bawaannya**.
-    Tapi jika diberi value `true` untuk parameter `growable`, maka List tersebut menjadi growable.
-    Contoh:
-    ```dart
-    List<int> listFixedInteger = List.filled(3, 0, growable: true);
-    ```
+  Untuk pemdeklarasikan List dengan panjang yang tetap bisa menggunakan constructor `List.filled()`.
+  Contoh:
+
+  ```dart
+  List<int> listFixedInteger = List.filled(3, 0);
+  ```
+
+  Maksud dari kode diatas adalah membuat List dengan panjang yang tetap **sepanjang 3 item**, dan **0 sebagai value bawaannya**.
+  Tapi jika diberi value `true` untuk parameter `growable`, maka List tersebut menjadi growable.
+  Contoh:
+
+  ```dart
+  List<int> listFixedInteger = List.filled(3, 0, growable: true);
+  ```
 
 - `Growable` : Panjang list bisa berubah secara dinamis dengen menyesuaikan item-itemnya.
-    Contoh-contoh mendeklarasikan Growable List:
-    1. Langsung memberi value ke variabel menggunakan kurung kotak `[]`.
-    ```dart
-    List<int> listGrowableInteger = [10, 20, 30, 40, 50];
-    // atau
-    List<int> listGrowableInteger = [];
-    ```
-    2. Menggunakan `List.generate()`.
-    Sama seperti `List.filled()`, `List.generate()` bisa diberi value ke parameter growable untuk menentukan apakah list bisa growable atau tidak. Namun secara default `List.generate()` adalah growable.
-    Cara ini, secara teknis menggunakan metode iterasi. Jadi, value akan ditambah pada `index` sebanyak panjang yang sudah ditentukan.  
-    ```dart
-    List<String> listGrowableInteger = List.generate(5, (index) => index * index);
-    ```
+  Contoh-contoh mendeklarasikan Growable List:
 
-    Jika sudah mendeklarasikan growable List, maka item dari List tersebut bisa ditambah, diubah, ataupun dihapus.
-    Contoh menambah 1 item ada List
-    ```dart
-    listGrowableInteger.add(60);
-    ```
+  1. Langsung memberi value ke variabel menggunakan kurung kotak `[]`.
+
+  ```dart
+  List<int> listGrowableInteger = [10, 20, 30, 40, 50];
+  // atau
+  List<int> listGrowableInteger = [];
+  ```
+
+  2. Menggunakan `List.generate()`.
+     Sama seperti `List.filled()`, `List.generate()` bisa diberi value ke parameter growable untuk menentukan apakah list bisa growable atau tidak. Namun secara default `List.generate()` adalah growable.
+     Cara ini, secara teknis menggunakan metode iterasi. Jadi, value akan ditambah pada `index` sebanyak panjang yang sudah ditentukan.
+
+  ```dart
+  List<String> listGrowableInteger = List.generate(5, (index) => index * index);
+  ```
+
+  Jika sudah mendeklarasikan growable List, maka item dari List tersebut bisa ditambah, diubah, ataupun dihapus.
+  Contoh menambah 1 item ada List
+
+  ```dart
+  listGrowableInteger.add(60);
+  ```
 
 ## 6. `Map`
 
 Tipe data Map digunakan untuk merepresentaikan kumpulan value dengan pasangan `key` dengan `value` dari key tersebut. `value` dari setiap `key` bisa diisi dengan tipe data apa saja (dinamis).
 
 Contoh-contoh mendeklarasikan Growable List:
- 1. Dengan value kosong
+
+1.  Dengan value kosong
+
 ```dart
 Map tempatTinggal = {};
 // Lalu diisi dengan key dan value
 tempatTinggal['Adit'] = 'Planet Bekasi';
 ```
- 2. Dengan beberapa pasangan `key` dan `value`
+
+2.  Dengan beberapa pasangan `key` dan `value`
+
 ```dart
 Map peliharaan = {
   'Adit': 'Megalodon',
@@ -83,5 +96,16 @@ Map peliharaan = {
 Tipe data Set digunakan untuk merepresentasikan kumpulan atau list dari beberapa nilai yang berbeda satu dengan lainnya (jika di masukkan 2 data yang sama maka hanya ada 1 data yang di terima). Berbeda dengan tipe data `List` atau `Map`, pada tipe data `Set` tidak memiliki `index` atau `key`.
 
 ---
+
+## 8. `Symbol`
+
+Symbol merupakan tipe data yang berisi simbol yang unik, biasa digunakan untuk memberikan informasi mengenai type,class, method dan lain-lain.
+
+symbol dapat dibuat dengan 2 cara, yaitu menggunakan `Symbol()` atau `#`.
+
+```dart
+var symbolVariable = #symbol; // menggunakan # untuk membuat symbol hanya bisa untuk 1 kata atau tidak boleh terdapat spasi
+Symbol symbolVariable = Symbol('Sebuah Symbol'); // menggunakan Symbol() untuk membuat symbol bisa untuk lebih dari 1 kata atau boleh terdapat spasi
+```
 
 [<< Materi sebelumnya](https://github.com/bellshade/Dart/tree/main/basic/1_hello_world) | [Materi selanjutnya >>](https://github.com/bellshade/Dart/tree/main/basic/3_variabel)

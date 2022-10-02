@@ -83,4 +83,10 @@ main(List<String> args) {
   // Mendapatkan panjang Set
   print('total kumpulanNama = ${kumpulanNama.length}');
   print('total karakterKartun = ${karakterKartun.length}');
+
+  // Tipe Data Symbol
+  var symbolVariable1 = #symbol;
+  Symbol symbolVariable2 = Symbol('Sebuah Symbol');
+  print(symbolVariable1); // Symbol("symbol")
+  print(symbolVariable2); // Symbol("Sebuah Symbol")
 }
