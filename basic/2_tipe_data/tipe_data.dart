@@ -31,8 +31,7 @@ main(List<String> args) {
   print('Nilai Growable List Integer : $listGrowableInteger');
   // 2. Menambah data ke list growable
   listGrowableInteger.add(60);
-  print(
-      'Nilai Growable List Integer (setelah ditambah) : $listGrowableInteger');
+  print('Nilai Growable List Integer (setelah ditambah) : $listGrowableInteger');
 
   // Tipe Data Map
   // Contoh 1:
