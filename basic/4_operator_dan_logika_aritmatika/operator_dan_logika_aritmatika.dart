@@ -93,4 +93,12 @@ main(List<String> args) {
   a = 7;
   a %= 3;
   print('a: ' + a.toString());
+
+  print('\n===========================');
+  print('Test Type Operator');
+
+  dynamic intVariable = 1;
+
+  print(intVariable is int);
+  print(intVariable is! int);
 }

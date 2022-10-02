@@ -62,6 +62,7 @@ int b = 3;
 int hasil = a ~/ b;
 print(hasil); // 1
 ```
+
 > Ingat, operator ini bukan pembulatan melainkan hanya menghilangkan koma.
 
 ### 6. Modulo
@@ -149,6 +150,20 @@ a %= 3; // sama seperti a = a % 3;
 print(a); // 1
 ```
 
----
+## Operator Test Type
+
+Operator yang membandingkan apakah sebuah variable adalah tipe data tertentu.
+
+| Operator |                            Fungsi                             |
+| :------: | :-----------------------------------------------------------: |
+|    is    |    Menghasilkan true jika variable sesuai dengan tipe data    |
+|   is!    | Menghasilkan true jika variable tidak sesuai dengan tipe data |
+
+```Dart
+dynamic variable = 1;
+
+print(intVariable is int); // true
+print(intVariable is! int); // false
+```
 
 [<< Materi sebelumnya](https://github.com/bellshade/Dart/tree/main/basic/3_variabel) | [Materi selanjutnya >>](https://github.com/bellshade/Dart/tree/main/basic/5_kondisi)
