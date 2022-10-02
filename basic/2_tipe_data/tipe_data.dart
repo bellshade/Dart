@@ -31,7 +31,8 @@ main(List<String> args) {
   print('Nilai Growable List Integer : $listGrowableInteger');
   // 2. Menambah data ke list growable
   listGrowableInteger.add(60);
-  print('Nilai Growable List Integer (setelah ditambah) : $listGrowableInteger');
+  print(
+      'Nilai Growable List Integer (setelah ditambah) : $listGrowableInteger');
 
   // Tipe Data Map
   // Contoh 1:
@@ -83,4 +84,10 @@ main(List<String> args) {
   // Mendapatkan panjang Set
   print('total kumpulanNama = ${kumpulanNama.length}');
   print('total karakterKartun = ${karakterKartun.length}');
+
+  // Tipe Data Symbol
+  var symbolVariable1 = #symbol;
+  Symbol symbolVariable2 = Symbol('Sebuah Symbol');
+  print(symbolVariable1); // Symbol("symbol")
+  print(symbolVariable2); // Symbol("Sebuah Symbol")
 }
